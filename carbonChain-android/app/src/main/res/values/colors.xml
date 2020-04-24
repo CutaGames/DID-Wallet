@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0066FF</color>
+    <color name="colorPrimaryDark">#0066FF</color>
+    <color name="colorAccent">#0066FF</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="pop_window_shadow_color">#66000000</color>
+
+    <!-- background colors -->
+    <color name="theme_background_1">#ffffffff</color>
+
+    <!-- public -->
+    <color name="public_content_title_bg">#fff8fbff</color>
+    <color name="public_content_title_color">#ff656565</color>
+    <color name="public_edit_text_cursor_color">#FF0066FF</color>
+    <color name="public_edit_text_bg_color">#fff7f7f7</color>
+    <color name="public_toast_text_color">#FF00872B</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black33">#333333</color>
+    <color name="black66">#666666</color>
+    <color name="black99">#999999</color>
+    <color name="black29">#292929</color>
+    <color name="blackf4">#f4f4f4</color>
+    <color name="blackB3">#B3B3B3</color>
+    <color name="blackDD">#DDDDDD</color>
+
+    <!-- login -->
+    <color name="login_wallet_title_text_color">#ff303133</color>
+    <color name="login_btn_login_bg_disable">#ffd2d5da</color>
+    <color name="login_inputs_error_text_color">#FF4A51</color>
+    <color name="login_forgot_password_text_color">#ff606266</color>
+    <color name="login_register_now_text_color">#ff11e066</color>
+
+    <!-- register bind device -->
+    <color name="register_bind_device_text_color_blue">#ff007aff</color>
+    <color name="register_bind_device_text_color_grave">#ffababab</color>
+    <color name="register_bind_device_create_carbon_chain_id_text_color">#ff000000</color>
+    <color name="register_bind_device_create_carbon_chain_id_remark_text_color">#ffbbbbbb</color>
+    <color name="register_bind_device_scan_text_color">#ffffffff</color>
+    <color name="register_bind_device_scan_continue_text_color">#ff0066ff</color>
+    <color name="register_bind_device_scan_continue_layout_id_success_text_color">#ff12e067</color>
+    <color name="register_bind_device_scan_continue_layout_id_success_remark_text_color">#ffbbbbbb</color>
+    <color name="register_bind_device_scan_continue_card_did_text_color">#ffffffff</color>
+    <color name="register_bind_device_scan_continue_card_did_title_color">#ffffffff</color>
+
+    <!-- register bind phone -->
+    <color name="register_bind_phone_title_text_color">#ff000000</color>
+    <color name="register_bind_phone_title_remark_text_color">#ffbbbbbb</color>
+    <color name="register_bind_phone_body_no_account_text_color">#ffff4a51</color>
+    <color name="register_bind_phone_next_text_color">#ffffffff</color>
+    <color name="register_bind_phone_already_has_account_text_color">#ff11e066</color>
+    <color name="register_bind_phone_next_please_input_code_text_color">#ff000000</color>
+    <color name="register_bind_phone_next_please_input_code_remark_text_color">#ffbbbbbb</color>
+    <color name="register_bind_phone_next_code_get_again_text_color">#ffbbbbbb</color>
+    <color name="register_bind_password_title_text_color">#ff000000</color>
+    <color name="register_bind_password_msg_rule_color_ok">#ff11e066</color>
+    <color name="register_bind_password_confirm_text_color">#ff000000</color>
+    <color name="register_bind_password_confirm_error_text_color">#ffff4a51</color>
+    <color name="register_bind_password_confirm_save_btn_text_color">#ffffffff</color>
+
+    <!-- main fragment storage -->
+    <color name="main_fragment_storage_bg_color">#fff8fbff</color>
+    <color name="main_storage_title_text_color">#ff000000</color>
+    <color name="main_storage_body_1_available_text_color">#ff0c0c0c</color>
+    <color name="main_storage_body_1_total_text_color">#ff898989</color>
+    <color name="main_storage_body_1_color_1">#ff3751fe</color>
+    <color name="main_storage_body_1_color_2">#ff7c8dff</color>
+    <color name="main_storage_body_1_color_3">#ff03e48a</color>
+    <color name="main_storage_body_1_color_4">#ff9dfb87</color>
+    <color name="main_storage_body_1_color_5">#ffffe788</color>
+    <color name="main_storage_body_1_color_6">#fff2f2f2</color>
+    <color name="main_storage_body_1_items_text_color">#ff898989</color>
+    <color name="main_storage_manage_text_color">#ff000000</color>
+    <color name="main_storage_body_2_text_color">#ff050505</color>
+
+    <!-- main fragment mine -->
+    <color name="main_mine_title_text_color">#ff000000</color>
+    <color name="main_mine_item_text_color">#ff000000</color>
+    
+    <!-- main fragment asset -->
+    <color name="asset_tab_text_color_color">#ff000000</color>
+    <color name="asset_tab_text_color_color_selected">#ffffffff</color>
+    <color name="asset_digit_all_text_color">#ffffffff</color>
+    <color name="asset_digit_all_number_text_color">#ffffffff</color>
+    <color name="asset_digit_oprations_transfer_text_color">#ff000000</color>
+    <color name="asset_digit_tablayout_wallet_soft_hard_text_color">#ff4a4a4a</color>
+    <color name="asset_digit_tablayout_wallet_soft_hard_text_color_selected">#ff0066ff</color>
+    <color name="coin_name_full_text_color">#ff8b8b8d</color>
+
+    <!-- main fragment asset digit soft -->
+    <color name="asset_digit_soft_none_text_color">#ff8b8b8d</color>
+    <color name="asset_digit_soft_add_wallet_btn_text_color">#ff007aff</color>
+    <color name="asset_digit_add_wallet_bg">#cc000000</color>
+    <color name="asset_business_record_profit_true">#ff11e066</color>
+    <color name="asset_business_record_profit_false">#ffff4a51</color>
+
+    <!-- collin 新增-->
+    <color name="create_wallet_alert_bg">#1663c2</color>
+    <color name="dialog_know_btn_bg_color">#fa6a74</color>
+    <color name="load_wallet_tip_text_color">#666666</color>
+    <color name="base_text_color">#323232</color>
+    <color name="mine_menu_divider_color">#eaeaea</color>
+    <color name="transfer_advanced_setting_help_text_color">#36c4e1</color>
+
+    <color name="item_divider_bg_color">#F0F0F0</color>
+    <color name="property_ico_name_color">#393a3a</color>
+    <color name="record_in_color">#11E066</color>
+    <color name="record_out_color">#FF4A51</color>
+
+    <color name="theme_color_btc">#FC9917</color>
+    <color name="theme_color_eth">#5D6178</color>
+    <color name="theme_color_usdt">#00D882</color>
+
+    <!-- main fragment asset data -->
+    <color name="asset_data_title_default_text_color">#ff8b8b8d</color>
+    <color name="asset_data_add_document_btn_text_color">#ff007aff</color>
+    <color name="asset_data_add_steps_content_bg">#fff8fbff</color>
+    <color name="asset_data_add_item_line_color">#ffdddddd</color>
+    <color name="asset_data_add_item_edit_text_color">#FFC0C0C2</color>
+
+    <!-- main fragment smart home -->
+    <color name="main_smart_home_title_text_color">#ff000000</color>
+    <color name="main_smart_home_title_samba_text_color">#ff8b8b8d</color>
+    <color name="main_smart_home_my_devices_text_color">#ff000000</color>
+    <color name="main_smart_home_my_devices_body_default_text_color">#ff8b8b8d</color>
+    <color name="main_smart_home_my_devices_btn_add_text_color">#ff007aff</color>
+    <color name="smart_home_device_online_color">#ff12e067</color>
+    <color name="smart_home_device_offline_color">#ffb1b1b1</color>
+    <color name="smart_home_add_device_title_text_color">#ff101010</color>
+    <color name="smart_home_brand_introduce_remark_text_color">#ff8b8b8d</color>
+    <color name="smart_home_brand_introduce_detail_remark_text_color">#ff8b8b8d</color>
+    <color name="smart_home_brand_introduce_support_device_text_color">#ff8b8b8d</color>
+
+    <!-- forget password -->
+    <color name="forget_step1_title_text_color">#ff000000</color>
+    <color name="forget_step1_title_remark_text_color">#ffbbbbbb</color>
+
+    <!-- search -->
+    <color name="search_result_text_color">#ff656565</color>
+    <color name="search_result_item_default_folder_text_color">#ff000000</color>
+    <color name="search_result_item_default_folder_time_text_color">#ff8b8b8d</color>
+    <color name="search_result_item_default_folder_size_text_color">#ff8b8b8d</color>
+    <color name="upload_title_text_color">#ff000000</color>
+
+    <!-- upload picture select picture folder -->
+    <color name="custom_action_bar_title_text_color">#ff000000</color>
+    <color name="upload_picture_select_folder_body_item_title_text_color">#ff000000</color>
+    <color name="upload_picture_select_folder_body_item_number_text_color">#ff8b8b8d</color>
+
+    <!-- upload picture select picture items -->
+    <color name="upload_picture_select_picture_number_text_color">#ff656565</color>
+    <color name="upload_select_target_folder_text_color">#ff4a4a4a</color>
+
+    <!-- upload select target folder -->
+    <color name="upload_target_folder_url_default_text_color">#ff656565</color>
+    <color name="upload_target_folder_url_bg_color">#fff8fbff</color>
+    <color name="upload_select_target_folder_main_item_my_space_text_color">#ff000000</color>
+    <color name="upload_select_target_folder_new_text_color">#ff007aff</color>
+
+    <!-- recycle -->
+    <color name="recycle_remark_default_text_color">#ff656565</color>
+    <color name="recycle_item_time_default_text_color">#ff8b8b8d</color>
+    <color name="recycle_item_size_text_color">#ff8b8b8d</color>
+    <color name="confirm_title_remark_default_1_text_color">#ff888888</color>
+    <color name="confirm_cancel_text_color">#ff9b9b9b</color>
+    <color name="confirm_delete_text_color">#ff0066ff</color>
+
+    <!-- picture detail -->
+    <color name="picture_view_full_btn_text_color">#ff131415</color>
+    <color name="picture_more_size_text_color">#ff8b8b8d</color>
+    <color name="picture_more_create_time_text_color">#ff8b8b8d</color>
+
+    <!-- picture -->
+    <color name="drop_down_tab_layout_text_color_false">#ff4a4a4a</color>
+    <color name="drop_down_tab_layout_text_color_true">#ff0066ff</color>
+    <color name="picture_time_day_default_text_color">#ff000000</color>
+    <color name="picture_album_line_folder_default_text_color">#ff5e6166</color>
+
+    <!-- share to -->
+    <color name="share_to_valid_day_radio_btn_text_color_select_true">#ff545454</color>
+    <color name="share_to_valid_day_radio_btn_text_color_select_false">#ffb3b3b3</color>
+    <color name="share_to_private_link_addr_text_color">#ff4a4a4a</color>
+
+    <!-- share to friend -->
+    <color name="share_to_friend_bg_color">#fff8fbff</color>
+    <color name="share_to_friend_name_text_color">#ff5e6166</color>
+
+    <!-- picture time title -->
+    <color name="picture_time_title_text_color">#ff000000</color>
+
+    <!-- video -->
+    <color name="item_title_time_default_text_color">#ff000000</color>
+    <color name="item_title_text_color">#ff000000</color>
+    <color name="item_time_text_color">#ff8b8b8d</color>
+    <color name="item_size_text_color">#ff8b8b8d</color>
+
+    <!-- phone backup -->
+    <color name="phone_backup_item_text_color">#ff000000</color>
+    <color name="phone_backup_detail_backup_now_text_color">#ff007aff</color>
+
+    <!-- transfer -->
+    <color name="transfer_downloading_text_color">#ff656565</color>
+    <color name="transfer_downloading_bg_color">#fff8fbff</color>
+    <color name="transfer_item_size_text_color">#ff8b8b8d</color>
+    <color name="transfer_item_speed_text_color">#ff8b8b8d</color>
+    <color name="transfer_complete_text_color">#ff656565</color>
+    <color name="transfer_clear_text_color">#ff494949</color>
+
+    <!-- music -->
+    <color name="mp3_play_music_author_text_color">#ff8b8b8d</color>
+    <color name="mp3_play_time_text_color">#ff8b8b8d</color>
+    <color name="music_list_title_color">#ff000000</color>
+    <color name="music_list_item_text_color">#ff000000</color>
+
+    <!-- secure -->
+    <color name="secure_other_unlock_finger_text_color">#ff4a4a4a</color>
+    <color name="secure_other_unlock_password_text_color">#ff4a4a4a</color>
+
+    <!-- smart home camera -->
+    <color name="smart_home_camera_sleep_confirm_remark_text_color">#ff888888</color>
+    <color name="smart_home_camera_history_day_explain_text_color">#ff8b8b8d</color>
+    <color name="smart_home_camera_history_day_select_true">#ff0066ff</color>
+    <color name="smart_home_camera_history_day_select_false">#ffdcdfe6</color>
+    <color name="camera_history_time_title_text_color">#ff000000</color>
+    <color name="camera_history_selectable_time_text_true_color">#ff0066ff</color>
+    <color name="camera_history_selectable_time_text_false_color">#ffc0c4cc</color>
+    <color name="camera_history_selectable_time_bg_true_color">#ffebf5ff</color>
+    <color name="camera_history_selectable_time_bg_false_color">#fff2f6fc</color>
+    <color name="camera_history_bottom_operation_text_color">#ff606266</color>
+
+    <!-- smart home camera settings -->
+    <color name="smart_home_camera_settings_overview_already_use_text_color">#ffb3b3b3</color>
+    <color name="date_picker_text_light">#ff0062f7</color>
+    <color name="date_picker_text_dark">#ff000000</color>
+    <color name="data_picker_title_line_color">#fff2f6fc</color>
+    <color name="data_picker_bg_overlay">#0f000000</color>
+
+    <!--  mine user info settings  -->
+    <color name="mine_user_info_888888">#888888</color>
+    <color name="mine_user_info_000000">#000000</color>
+    <color name="mine_user_info_FFFFFF">#FFFFFF</color>
+
+    <color name="mine_manage_user_storage">#4A4A4A</color>
+    <color name="color_FF5936">#FF5936</color>
+    <color name="color_8B8B8D">#8B8B8D</color>
+    <color name="color_4A4A4A">#4A4A4A</color>
+    <color name="color_D2D5DA">#D2D5DA</color>
+    <color name="color_BBBBBB">#BBBBBB</color>
+    <color name="color_12E067">#12E067</color>
+    <color name="color_0066FF">#0066FF</color>
+    <color name="color_FF4A51">#FF4A51</color>
+    <color name="color_FF9595">#FF9595</color>
+    <color name="color_606266">#606266</color>
+
+
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

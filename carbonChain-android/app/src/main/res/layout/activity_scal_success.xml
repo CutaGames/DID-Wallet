@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_user_info_FFFFFF"
+    tools:context=".activities.bindsevice.ScanSuccessActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/action_bar_icon_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/color_BBBBBB"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/llText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTipOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_12E067"
+                android:text="@string/bindedDevice"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:textSize="@dimen/sp_20"/>
+            <TextView
+                android:id="@+id/tvTipTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_12E067"
+                android:text="@string/creat_acount_success"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:textSize="@dimen/sp_20"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSuccess"
+            android:layout_below="@id/llText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_80"
+            android:background="@mipmap/succeed_account"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvCreateDiD"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_110"
+        android:layout_marginRight="@dimen/dp_110"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_33"
+        android:text="@string/create_did"
+        android:gravity="center"
+        android:background="@drawable/asset_transfer_coin_apply_complete_btn_bg"
+        android:textColor="@color/color_0066FF"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dance_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_popup_window_line_height"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:textColor="#ffa0a0a0"
+        android:background="@drawable/shadow_bg_bottom_line"/>
+
+</RelativeLayout>

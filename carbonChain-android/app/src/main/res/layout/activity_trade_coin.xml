@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff8fbff">
+
+    <!-- custom action bar begin -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_action_bar_height"
+        android:background="@drawable/shadow_bg_bottom_line">
+        <!-- back arrow -->
+        <ImageView
+            android:id="@+id/iv_title_left_back"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/action_bar_icon_back"/>
+
+        <!-- title center -->
+        <TextView
+            android:id="@+id/custom_action_bar_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/asset_select_transfer_coin_addr_text"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+
+        <!-- scan -->
+        <ImageView
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_alignParentRight="true"
+            android:padding="11dp"
+            android:src="@mipmap/scan_icon"/>
+
+    </RelativeLayout>
+    <!-- custom action bar end -->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- coin addr content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/addr_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="434"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="400"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="11dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/shadow_bg_arround_2">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="12"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/transfer_coin"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@mipmap/coin_icon_btc"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/transfer_coin"
+                            android:layout_centerVertical="true"
+                            android:text="@string/coin_name_btc"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="14"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="≈￥0.00"
+                        android:textSize="@dimen/public_text_size_14_sp"
+                        android:textColor="#ff8b8b8d"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:hint="@string/asset_transfer_input_money_hint"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@android:color/black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="14"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asset_transfer_coin_receive_addr_text"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:textColor="@android:color/black"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_16_sp"
+                            android:hint="@string/asset_transfer_input_receive_addr_hint"
+                            android:gravity="center_vertical"
+                            android:textCursorDrawable="@android:color/black"/>
+                        <ImageView
+                            android:id="@+id/addr_book"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/asset_transfer_coin_communication"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="18"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asset_transfer_coin_cost_text"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:textColor="@android:color/black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="12"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_asset_transfer_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="6sat/b"
+                            android:textColor="#ff8b8b8d"
+                            android:textSize="@dimen/public_text_size_14_sp"/>
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_asset_transfer_cost"
+                            android:max="100"
+                            android:progress="30"
+                            android:progressDrawable="@drawable/seek_bar_bg"
+                            android:thumb="@drawable/seek_bar_thumb"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="27"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asset_transfer_coin_remark_text"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:textColor="@android:color/black"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:hint="@string/asset_transfer_remark_hint"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@android:color/black"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="22"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="19"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/addr_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="145"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/coin_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"/>
+
+            <!-- receive coin layout -->
+            <LinearLayout
+                android:id="@+id/container_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_transfer_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/public_toast_height"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center"
+                    android:text="@string/public_confirm_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/public_text_size_14_sp"
+                    android:background="@drawable/asset_transfer_comfirm_bg"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_coin_touch_arrow_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_reveive_coin_touch_arrow_up_height"
+                    android:paddingTop="7dp"
+                    android:src="@mipmap/asset_receive_coin_touch_arrow_up_icon"
+                    android:visibility="gone"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

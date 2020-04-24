@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_navigation_smart_home"
+        android:icon="@mipmap/main_navigation_smart_home_false"
+        android:title="@string/main_navigation_smart_home_text"/>
+
+    <item
+        android:id="@+id/main_navigation_storage"
+        android:icon="@mipmap/main_navigation_storage_false"
+        android:title="@string/main_navigation_storage_text" />
+
+    <item
+        android:id="@+id/main_navigation_find"
+        android:icon="@mipmap/main_navigation_find_false"
+        android:title="@string/main_navigation_find_text" />
+
+    <item
+        android:id="@+id/main_navigation_asset"
+        android:icon="@mipmap/main_navigation_asset_false"
+        android:title="@string/main_navigation_digital_assets_text" />
+
+    <item
+        android:id="@+id/main_navigation_mine"
+        android:icon="@mipmap/main_navigation_mine_false"
+        android:title="@string/main_navigation_mine_text" />
+
+</menu>

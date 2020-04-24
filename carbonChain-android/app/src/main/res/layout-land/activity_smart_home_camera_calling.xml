@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_title_left_back"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@mipmap/back_arrow_left_white_icon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="11dp"
+            android:text="@string/smart_home_camera_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/public_text_size_16_sp"/>
+        <TextView
+            android:id="@+id/smart_home_camera_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="43dp"
+            android:text="300K/S"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/public_text_size_12_sp"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/smart_home_camera_recording_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/smart_home_camera_speed"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:drawableLeft="@mipmap/smart_home_camera_recording_red_circle"
+            android:drawablePadding="3dp"
+            android:text="@string/smart_home_camera_recording_time_default"
+            android:textSize="@dimen/public_text_size_14_sp"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            android:background="@drawable/smart_home_recording_bg"/>
+        <ImageView
+            android:id="@+id/smart_home_camera_calling_image"
+            android:layout_width="@dimen/smart_home_camera_sleeping_image_width"
+            android:layout_height="@dimen/smart_home_camera_sleeping_image_width"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/smart_home_camera_calling_image"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/smart_home_camera_calling_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/smart_home_camera_sleeping_text_margin_bottom"
+            android:text="@string/smart_home_camera_calling_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/public_text_size_16_sp"
+            android:visibility="gone"/>
+        
+        <ImageView
+            android:id="@+id/switch_screen"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="14dp"
+            android:src="@mipmap/smart_home_camera_calling_switch_screen"
+            android:visibility="visible"/>
+        
+        <ImageView
+            android:id="@+id/iv_mine"
+            android:layout_width="82dp"
+            android:layout_height="102dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/smart_home_camera_calling_mine_default_icon"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+
+
+    <!-- bottom operations -->
+
+
+    <!-- operation -->
+    <LinearLayout
+        android:id="@+id/operation_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/smart_home_camera_operation_2_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/smart_home_camera_calling_land_operation_bg">
+        <ImageView
+            android:id="@+id/iv_no_video"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@mipmap/smart_home_camera_calling_land_no_video_false"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"/>
+        <ImageView
+            android:layout_width="@dimen/smart_home_camera_operation_2_height"
+            android:layout_height="@dimen/smart_home_camera_operation_2_height"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/smart_home_camera_operation_2_item_calling"/>
+        <ImageView
+            android:id="@+id/iv_no_voice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@mipmap/smart_home_camera_calling_land_no_voice_false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="21dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</RelativeLayout>

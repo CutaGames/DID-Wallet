@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tancheng.carbonchain.activities.ActivityWelcome"
+    android:background="@mipmap/welcome_bg">
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="@dimen/welcome_btn_start_width"
+        android:layout_height="@dimen/welcome_btn_start_height"
+        android:text="@string/welcome_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/welcome_btn_start_margin_bottom"
+        android:textColor="@android:color/white"
+        android:background="@drawable/welcome_btn_click_start_bg_selector"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,684 @@
+<resources>
+    <string name="app_name">CarbonChain</string>
+    <string name="welcome_start">开始探索</string>
+    <string name="login_no_account">您的账号不存在</string>
+
+    <!-- public -->
+    <string name="public_cancel_text">取消</string>
+    <string name="public_delete_text">删除</string>
+    <string name="public_select_all_text">全选</string>
+    <string name="public_select_all_cancel_text">取消全选</string>
+    <string name="public_confirm_text">确定</string>
+    <string name="phone_recovery_text">恢复</string>
+    <string name="public_new_folder_text">新建文件夹</string>
+    <string name="public_bottom_operation_more_title_default_text">更多</string>
+    <string name="public_rename_text">重命名该文件</string>
+    <string name="public_item_title_default_text_folder">我是文件夹</string>
+    <string name="public_item_time_default_text">2020年01月10日 22:34</string>
+    <string name="public_item_size_default_text">17.4K</string>
+    <string name="public_item_picture_text">我是图片.jpg</string>
+    <string name="public_item_document_text">我是文档.ppt</string>
+    <string name="public_text_week_1">每周一</string>
+    <string name="public_text_week_2">每周二</string>
+    <string name="public_text_week_3">每周三</string>
+    <string name="public_text_week_4">每周四</string>
+    <string name="public_text_week_5">每周五</string>
+    <string name="public_text_week_6">每周六</string>
+    <string name="public_text_week_7">每周日</string>
+    <string name="public_text_year">年</string>
+    <string name="public_text_month">月</string>
+    <string name="public_text_day">日</string>
+    <string name="public_text_hour">时</string>
+    <string name="public_text_minute">分</string>
+    <string name="public_text_complete">完成</string>
+    <string name="public_btn_save_text">保存</string>
+
+
+    <!-- login -->
+    <string name="login_wallet_name" translatable="false">CarbonChain</string>
+
+    <string name="login_password_error">您的密码不对哦</string>
+    <string name="login_btn_login">登录</string>
+    <string name="login_edit_text_hint_account">请输入账号</string>
+    <string name="login_edit_text_hint_password">请输入密码</string>
+    <string name="login_forgot_password">忘记密码了？</string>
+    <string name="login_register_now">现在注册</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- register bind device -->
+    <string name="register_bind_device_step_1">生成身份ID</string>
+    <string name="register_bind_device_step_2">验证手机</string>
+    <string name="register_bind_device_step_3">设置密码</string>
+    <string name="register_bind_device_create_carbon_chain_id">生成炭承身份ID</string>
+    <string name="register_bind_device_create_carbon_chain_id_remark">为保障您的数据安全，请先扫描设备上的二维码创建炭承身份ID</string>
+    <string name="register_bind_device_scan_text">扫一扫</string>
+    <string name="register_bind_device_scan_continue_text">继续</string>
+    <string name="register_bind_device_scan_continue_layout_id_success">炭承身份ID已生成</string>
+    <string name="register_bind_device_scan_continue_layout_id_success_remark">为了您的数据和账户安全，请先妥善保管</string>
+    <string name="register_bind_device_scan_continue_card_did_text">5KYZdUEo39z3FPrtuX2QbbwGnNP5zTd7yyr2SC1j299sBCnWjss</string>
+    <string name="register_bind_device_scan_continue_card_did_title">炭承身份ID</string>
+
+    <!-- register bind phone -->
+    <string name="register_bind_phone_title">注册</string>
+    <string name="register_bind_phone_title_remrk">Hi!欢迎来使用炭承app</string>
+    <string name="register_bind_phone_body_no_account">您的账号不存在</string>
+    <string name="register_bind_phone_body_code_error">动态码不对哦</string>
+    <string name="register_bind_phone_text_hint">请输入手机号</string>
+    <string name="register_bind_phone_body_code_hint">请输入动态码</string>
+    <string name="register_bind_phone_next_text">下一步</string>
+    <string name="register_bind_phone_already_has_account_text">已有账号</string>
+    <string name="register_bind_phone_next_please_input_code_text">请输入验证码</string>
+    <string name="register_bind_phone_next_please_input_code_remark_text">验证码已发送到您的手机\n+86-15902100000</string>
+    <string name="register_bind_phone_next_code_get_again_text">重新获取</string>
+
+    <!-- register bind password -->
+    <string name="register_bind_password_title_text">设置密码</string>
+    <string name="register_bind_password_text_hint">请输入密码</string>
+    <string name="register_bind_password_msg_rule_length_text">*至少8位字符</string>
+    <string name="register_bind_password_msg_rule_case_low_text">*包含小写字母</string>
+    <string name="register_bind_password_msg_rule_case_up_text">*包含大写字母</string>
+    <string name="register_bind_password_msg_rule_include_number_text">*包含数字</string>
+    <string name="register_bind_password_confirm_text">确认设置密码</string>
+    <string name="register_bind_password_confirm_hint">再次输入密码以确认</string>
+    <string name="register_bind_password_confirm_error_text">您的密码不对哦</string>
+
+    <!-- main -->
+    <!-- main navigation -->
+    <string name="main_navigation_smart_home_text">家居</string>
+    <string name="main_navigation_storage_text">存储</string>
+    <string name="main_navigation_find_text">发现</string>
+    <string name="main_navigation_digital_assets_text">资产</string>
+    <string name="main_navigation_mine_text">我的</string>
+
+    <!-- main fragment storage -->
+    <string name="main_storage_title_text">CarbonLink_Disk</string>
+    <string name="main_storage_body_1_available_text">可用空间 500G</string>
+    <string name="main_storage_body_1_total_text">总共 1000G</string>
+    <string name="main_storage_body_1_items_image_text">图片</string>
+    <string name="main_storage_body_1_items_video_text">视频</string>
+    <string name="main_storage_body_1_items_mp3_text">音频</string>
+    <string name="main_storage_body_1_items_file_text">文档</string>
+    <string name="main_storage_body_1_items_other_text">其它</string>
+    <string name="main_storage_manage_text">存储管理</string>
+    <string name="main_storage_body_2_image_text">图片</string>
+    <string name="main_storage_body_2_video_text">视频</string>
+    <string name="main_storage_body_2_document_text">文档</string>
+    <string name="main_storage_body_2_voice_text">音频</string>
+    <string name="main_storage_body_2_pub_space_text">公共空间</string>
+    <string name="main_storage_body_2_phone_backup_text">手机备份</string>
+    <string name="main_storage_body_2_my_collect_text">我的收藏</string>
+    <string name="main_storage_body_2_transfer_text">传输</string>
+    <string name="main_storage_body_2_secure_text">保险箱</string>
+    <string name="main_storage_body_2_trash_text">回收站</string>
+
+    <!-- main fragment mine -->
+    <string name="main_mine_title_text">我的</string>
+    <string name="main_mine_item_profile_text">个人信息</string>
+    <string name="main_mine_item_icon_user_manage_text">用户管理</string>
+    <string name="main_mine_item_icon_wallet_manage_text">钱包管理</string>
+    <string name="main_mine_item_icon_machine_manage_text">设备管理</string>
+    <string name="main_mine_item_icon_software_manage_text">软件管理</string>
+    <string name="main_mine_item_icon_help_text">帮助与反馈</string>
+    <string name="main_mine_item_icon_code_text">我的二维码</string>
+    <string name="main_mine_item_icon_about_text">关于</string>
+
+    <!-- main fragment asset digit -->
+    <string name="asset_tab_layout_digit_text">数字资产</string>
+    <string name="asset_tab_layout_data_text">数据资产</string>
+    <string name="asset_digit_all_text">总资产（￥）</string>
+    <string name="asset_digit_all_number_default">0.00</string>
+    <string name="asset_digit_oprations_transfer_text">转账</string>
+    <string name="asset_digit_oprations_receive_text">收钱</string>
+    <string name="asset_digit_oprations_record_text">交易记录</string>
+    <string name="asset_digit_asset_manage_text">资产管理</string>
+    <string name="asset_digit_asset_manage_soft_text">热钱包</string>
+    <string name="asset_digit_asset_manage_hard_text">硬件钱包</string>
+    <string name="asset_add_soft_wallet_create_text" translatable="false">创建钱包</string>
+    <string name="asset_add_soft_wallet_import_text">导入钱包</string>
+    <string name="asset_select_coin_type_text">选择钱包币种</string>
+    <string name="asset_select_coin_type_more_text">请选择您要创建的币种（可多选）</string>
+    <string name="asset_select_coin_confirm_add_text">确定添加</string>
+    <string name="coin_name_btc">BTC</string>
+    <string name="coin_name_full_btc">Bitcoin</string>
+    <string name="coin_name_usdt">USDT</string>
+    <string name="coin_name_full_usdt">Tether</string>
+    <string name="coin_name_xrp">XRP</string>
+    <string name="coin_name_full_xrp">Ripple</string>
+    <string name="coin_name_eth">ETH</string>
+    <string name="coin_name_full_eth">Ethereum</string>
+    <string name="coin_name_eos">EOS</string>
+    <string name="coin_name_full_eos">Enterprise Operation System</string>
+    <string name="coin_name_ltc">LTC</string>
+    <string name="coin_name_full_ltc">Litecoin</string>
+    <string name="asset_add_soft_wallet_create_success_text" translatable="false">创建钱包成功</string>
+    <string name="asset_import_coin_detail_title_text">导入BTC钱包</string>
+    <string name="asset_import_wallet_set_password_text">设置密码</string>
+    <string name="asset_import_wallet_set_password_remark_text">如果要在导入的同时修改钱包密码,请在输入框內重复输入新密码,旧密码将在导入钱包后失效。</string>
+    <string name="asset_import_wallet_set_password_hint">钱包密码</string>
+    <string name="asset_import_wallet_set_password_hint_confirm">重复输入密码</string>
+    <string name="asset_digit_soft_add_wallet_start_import_text">开始导入</string>
+    <string name="asset_add_soft_wallet_import_mnemonics_title_text">使用助记词导入的同时可以修改钱包密码</string>
+    <string name="asset_add_soft_wallet_import_mnemonics_hint_text">请输入助记词单词，并使用空格分隔</string>
+    <string name="asset_add_soft_wallet_import_private_key_title_text">输入私钥至框内，或者扫一扫由私钥生产的二维码</string>
+    <string name="asset_add_soft_wallet_import_private_key_hint_text">请输入钱包私钥</string>
+    <string name="asset_add_soft_wallet_import_mnemonics_tab_text">助记词</string>
+    <string name="asset_add_soft_wallet_import_private_key_tab_text">私钥</string>
+    <string name="asset_select_receive_coin_addr_text">选择收款地址</string>
+    <string name="asset_wallet_addr_copy_success">钱包地址复制成功！</string>
+    <string name="asset_receive_addr_default_text">sddfsjjs837584hdfsdfasfjw934293923</string>
+    <string name="asset_select_transfer_coin_addr_text">选择转账地址</string>
+    <string name="asset_transfer_input_money_hint">请输入金额</string>
+    <string name="asset_transfer_coin_receive_addr_text">收款地址</string>
+    <string name="asset_transfer_input_receive_addr_hint">请输入收款地址</string>
+    <string name="asset_transfer_coin_cost_text">矿工费用</string>
+    <string name="asset_transfer_coin_remark_text">备注</string>
+    <string name="asset_transfer_remark_hint">备注选填</string>
+    <string name="asset_transfer_coin_confirm_title_text">为了您的资产安全请按要求填写钱包和手机验证码</string>
+    <string name="asset_transfer_coin_confirm_password_text">钱包密码</string>
+    <string name="asset_transfer_coin_input_password_hint">请输入钱包密码</string>
+    <string name="asset_transfer_coin_confirm_phone_code_text">手机验证码</string>
+    <string name="asset_transfer_coin_confirm_btn_text">确定转账</string>
+    <string name="asset_select_transfer_coin_device_confirm_text">设备确认</string>
+    <string name="asset_transfer_coin_confirm_device_text">确定转账信息无误，请点击设备上的【确认】</string>
+    <string name="asset_transfer_coin_apply_complete_text">转账申请成功</string>
+    <string name="asset_digit_soft_address_book_none_text">您的地址本为空，点击右上角+号添加吧</string>
+    <string name="asset_transfer_coin_add_addr_text">新建地址</string>
+    <string name="asset_transfer_coin_add_receive_addr_text">收款地址</string>
+    <string name="asset_transfer_coin_add_receive_addr_text_hint">请输入有效地址</string>
+    <string name="asset_transfer_coin_add_receive_name_text">名称</string>
+    <string name="asset_transfer_coin_add_receive_name_text_hint">请输入名称</string>
+    <string name="asset_transfer_coin_add_receive_remark_text">备注</string>
+    <string name="asset_transfer_coin_add_receive_remark_text_hint">备注选填</string>
+    <string name="asset_recode_all">全部</string>
+    <string name="asset_recode_receive">收款</string>
+    <string name="asset_recode_trade">转账</string>
+    <string name="asset_business_record_status_complete">完成</string>
+    <string name="asset_business_record_status_doing">进行中</string>
+    <string name="asset_soft_wallet_remove_btn_text">移除</string>
+    <string name="asset_soft_wallet_addr_text">钱包地址</string>
+    <string name="asset_soft_wallet_name_text">钱包名称</string>
+    <string name="asset_soft_wallet_change_name_text">修改钱包名称</string>
+    <string name="asset_soft_wallet_remove_text">移除钱包</string>
+    <string name="asset_soft_wallet_remove_input_password">请输入该钱包的密码移除钱包</string>
+
+    <!-- main fragment asset digit soft -->
+    <string name="asset_digit_soft_none_text">您还没有钱包哦！</string>
+    <string name="asset_digit_soft_add_wallet_btn_text">添加钱包</string>
+
+    <!--新增-->
+    <string name="property_drawer_qrcode_scanner">扫一扫</string>
+    <string name="property_drawer_create_wallet">创建钱包</string>
+    <string name="property_drawer_hard_wallet">硬件钱包</string>
+    <string name="wallet_manager_load_wallet">导入钱包</string>
+    <string name="create_wallet_name_hint">钱包名称</string>
+    <string name="create_wallet_pwd_hint">密码</string>
+    <string name="create_wallet_pwd_again_hint">重复密码</string>
+    <string name="create_wallet_pwd_reminder_info_hint">密码提示信息(可不填)</string>
+    <string name="create_wallet_agreement_reminder">我已经仔细阅读并同意</string>
+    <string name="create_wallet_agreement">服务及隐私条款</string>
+    <string name="create_wallet_name_repeat_tips">钱包名称重复</string>
+    <string name="create_wallet_name_input_tips">请输入钱包名称</string>
+    <string name="create_wallet_pwd_input_tips">密码不能为空</string>
+    <string name="create_wallet_pwd_confirm_input_tips">密码不一致，请重新输入</string>
+    <string name="create_wallet_alert1">* 密码用于隐私保护和交易授权，强度非常重要</string>
+    <string name="create_wallet_alert2">* 登链钱包不存储密码秘钥，也无法帮您找回，请务必牢记</string>
+    <string name="deriving_wallet_tip">导出钱包中…</string>
+    <string name="loading_wallet_tip">导入钱包中…</string>
+    <string name="deleting_wallet_tip">删除钱包中…</string>
+    <string name="creating_wallet_tip">创建钱包中…</string>
+    <string name="saving_wallet_tip">保存钱包中…</string>
+
+
+    <!--备份钱包-->
+    <string name="wallet_backup_tips1">最后一步：立即备份你的钱包！</string>
+    <string name="wallet_backup_tips2">备份钱包：导出「助记词」并抄写到安全的地方，千万不要保存到网络上，然后尝试转入、转出小额资产开始使用.</string>
+    <string name="wallet_backup_backup_btn">备份钱包</string>
+    <string name="wallet_backup_skip_btn">跳过</string>
+    <string name="wallet_backup_backup_help">查看备份详细教程</string>
+
+
+    <!--输入密码-->
+    <string name="input_pwd_dialog_tip">请输入密码</string>
+    <string name="input_pwd_delete_tip">请慎重，此操作无法撤销</string>
+    <string name="input_pwd_dialog_confirm">确认</string>
+
+    <!--备份助记词-->
+    <string name="mnemonic_backup_title">备份助记词</string>
+    <string name="mnemonic_backup_tips1">抄写下你的钱包助记词</string>
+    <string name="mnemonic_backup_tips2">助记词用于回复钱包或重置钱包密码，降它准确的抄写到纸上，并存放在只有你知道的安全的地方。</string>
+
+    <string name="mnemonic_backup_alert_tips">如果有人获取你的助记词将直接获取你的资产！请抄写下助记词并存放在安全的地方。</string>
+    <string name="mnemonic_backup_alert_btn">知道了</string>
+    <string name="mnemonic_backup_alert_title">请勿截图</string>
+
+    <string name="verify_backup_tip1">确认你的钱包助记词</string>
+    <string name="verify_backup_tip2">请按顺序点击助记词，以确认你的备份助记词正确。</string>
+    <string name="verify_backup_failed">备份失败，请检查你的助记词</string>
+
+    <string name="load_wallet_title">导入钱包</string>
+    <string name="load_wallet_btn">开始导入</string>
+
+    <string name="load_wallet_by_official_wallet_keystore_hint">keystore 文本内容</string>
+    <string name="load_wallet_by_official_wallet_keystore_tip">直接复制粘贴以太坊官方钱包keystore文件内容至输入框。或者通过生成keystore内容的二维码，扫描录入。</string>
+    <string name="load_wallet_by_official_wallet_help">什么是keystore？</string>
+    <string name="load_wallet_by_official_wallet_keystore_input_tip">keystore文件无效</string>
+
+    <string name="load_wallet_by_private_key_input_tip">无效的私钥</string>
+    <string name="load_wallet_by_private_key_hint">明文私钥</string>
+    <string name="load_wallet_by_private_key_help">什么是私钥？</string>
+
+    <string name="load_wallet_by_mnemonic_hint">助记词，按空格分隔</string>
+    <string name="load_wallet_by_mnemonic_input_tip">请检查您的助记词</string>
+    <string name="load_wallet_by_mnemonic_standard">m/44\'/60\'/0\'/0/0</string>
+    <string name="load_wallet_by_mnemonic_standard_ledger">m/44\'/60\'/0\'/0</string>
+    <string name="load_wallet_by_mnemonic_standard_custom">m/44\'/60\'/1\'/0/0</string>
+    <string name="load_wallet_by_mnemonic_standard_jaxx_option">m/44\'/60\'/0\'/0/0 Jaxx,Metamask(ETH)</string>
+    <string name="load_wallet_by_mnemonic_standard_ledger_option">m/44\'/60\'/0\'/0 Ledger (ETH)</string>
+    <string name="load_wallet_by_mnemonic_standard_custom_option">m/44\'/60\'/1\'/0/0 自定义路径</string>
+    <string name="load_wallet_by_mnemonic_help">什么是助记词？</string>
+    <string name="load_wallet_already_exist">钱包已存在</string>
+
+    <string name="load_wallet_indicator_mnemonic">助记词</string>
+    <string name="load_wallet_indicator_official">Keystore</string>
+    <string name="load_wallet_indicator_private_key">私钥</string>
+
+    <string name="derive_keystore_tip">请复制粘贴Keystore文件到安全、离线的地方保存。切勿保存至邮箱、记事本、网盘、聊天工具等，非常危险</string>
+    <string name="derive_keystore_tip3">如需在线保存，则建议使用安全等级更高的 1Password 等密码保管软件保存 Keystore。</string>
+    <string name="derive_keystore_tip4">二维码禁止保存、截图、以及拍照、仅供用户在安全环境下直接扫描来方便的导入钱包。</string>
+    <string name="derive_keystore_tip5">请在确保四周无人及无摄像头的情况下使用。二维码一旦被人获取将造成不可挽回的资产损失。</string>
+    <string name="derive_keystore_tip_title2">请勿使用网络传输</string>
+    <string name="derive_keystore_tip_title3">密码保险箱保存</string>
+    <string name="derive_keystore_tip_title4">仅供直接扫描</string>
+    <string name="derive_keystore_tip_title5">在安全环境下使用</string>
+    <string name="derive_keystore_copy">复制 Keystore</string>
+    <string name="derive_with_keystore">Keystore</string>
+    <string name="derive_with_qrcode">二维码</string>
+
+    <!--  交易记录tab  -->
+    <string name="tx_record_all">全部</string>
+    <string name="tx_record_out">转出</string>
+    <string name="tx_record_in">转入</string>
+
+    <!--交易详情-->
+    <string name="subtitle_from">付款地址</string>
+    <string name="subtitle_to">收款地址</string>
+    <string name="subtitle_gas_fee">矿工费</string>
+    <string name="label_gas_limit">Gas Limit</string>
+    <string name="label_gas_price">Gas Price</string>
+    <string name="subtitle_transaction_num">交易号 #</string>
+    <string name="subtitle_transaction_time">交易时间</string>
+    <string name="subtitle_block_num">区块 #</string>
+    <string name="action_more_details">在区块浏览器中参看详细信息</string>
+
+
+    <!-- main fragment asset data -->
+    <string name="asset_data_title_default_text">您还没有健康档案哦</string>
+    <string name="asset_data_add_document_btn_text">添加档案</string>
+    <string name="asset_data_health_text">健康档案</string>
+    <string name="asset_data_original_text">原创内容</string>
+    <string name="asset_data_my_health_document">我的健康档案</string>
+    <string name="asset_data_add_steps_1_text">基础情况</string>
+    <string name="asset_data_add_steps_2_text">健康情况</string>
+    <string name="asset_data_add_steps_3_text">生活情况</string>
+    <string name="asset_data_add_step_1_sub_1_text">基础信息</string>
+    <string name="asset_data_add_step_1_sub_1_name_text">姓名</string>
+    <string name="asset_data_add_item_edit_text_hint_input">请输入</string>
+    <string name="asset_data_add_step_1_sub_1_birthday_text">出生年月</string>
+    <string name="asset_data_add_item_edit_text_hint_select">请选择</string>
+    <string name="asset_data_add_step_1_sub_1_phone_text">手机号</string>
+    <string name="asset_data_add_step_1_sub_1_jiguan_text">籍贯</string>
+    <string name="asset_data_add_step_1_sub_1_mingzu_text">名族</string>
+    <string name="asset_data_add_step_1_sub_1_sex_text">性别</string>
+    <string name="asset_data_add_step_1_sub_1_shengao_text">身高</string>
+    <string name="asset_data_add_step_1_sub_1_shengao_cm">cm</string>
+    <string name="asset_data_add_step_1_sub_1_weight_text">体重</string>
+    <string name="asset_data_add_step_1_sub_1_weight_kg">kg</string>
+    <string name="asset_data_add_step_1_sub_1_bmi_text">BMI</string>
+    <string name="asset_data_add_item_edit_text_hint_auto">自动计算</string>
+    <string name="asset_data_add_step_1_sub_1_bmi_auto">标准体重</string>
+    <string name="asset_data_add_step_1_sub_1_blood_type_text">血型</string>
+    <string name="asset_data_add_step_1_sub_1_yaowei_text">腰围</string>
+    <string name="asset_data_add_step_1_sub_1_yaowei_cm">cm</string>
+    <string name="asset_data_add_step_1_sub_2_text">学历与工作情况</string>
+    <string name="asset_data_add_step_1_sub_2_top_xueli_text">最高学历</string>
+    <string name="asset_data_add_step_1_sub_2_occupation_text">职业</string>
+    <string name="asset_data_add_step_1_sub_3_merry_status_text">婚姻状况</string>
+    <string name="asset_data_add_step_1_sub_2_birth_status_text">生育状态</string>
+    <string name="asset_data_add_step_1_next_text">下一步</string>
+    <string name="asset_data_add_step_2_next_text">下一步</string>
+    <string name="asset_data_add_step_2_sub_1_text">家族史</string>
+    <string name="asset_data_add_other_hint_text">其它</string>
+    <string name="asset_data_add_step_2_sub_1_family_members_text">家庭成员</string>
+    <string name="asset_data_add_input_remark_text">请输入备注</string>
+    <string name="asset_data_add_step_2_sub_2_text">既往史</string>
+    <string name="asset_data_add_step_2_sub_2_seek_time_text">发病时间</string>
+    <string name="asset_data_add_step_2_sub_3_text">疾病史</string>
+    <string name="asset_data_add_step_2_sub_4_text">过敏史</string>
+    <string name="asset_data_add_step_2_sub_4_allergy_type_text">过敏类型</string>
+    <string name="asset_data_add_step_2_sub_4_allergy_source_text">过敏源</string>
+    <string name="asset_data_add_step_2_sub_4_allergy_symptom_text">过敏症状</string>
+    <string name="asset_data_add_input_allergy_symptom_text">请输入过敏症状</string>
+    <string name="asset_data_add_step_2_sub_5_text">用药情况</string>
+    <string name="asset_data_add_input_current_medicine_and_health_products_text">输入正在服用的药物或者保健品</string>
+
+    <!-- main fragment smart home -->
+    <string name="main_smart_home_title_text">我的智能家居</string>
+    <string name="main_smart_home_title_samba_text">SAMBA</string>
+    <string name="main_smart_home_my_devices_text">我的设备</string>
+    <string name="main_smart_home_my_devices_body_default_text">已绑定2个设备</string>
+    <string name="main_smart_home_my_devices_btn_add_text">添加硬件</string>
+    <string name="smart_home_all_text">全部</string>
+    <string name="smart_home_encrypt_text">加密设备</string>
+    <string name="smart_home_no_encrypt_text">非加密设备</string>
+    <string name="smart_home_item_encrypt_tancheng_default_1">炭承设备</string>
+    <string name="smart_home_item_encrypt_tancheng_default_2">海尔智能门锁</string>
+    <string name="smart_home_item_status_on_line">在线</string>
+    <string name="smart_home_item_status_off_line">离线</string>
+    <string name="smart_home_add_device_text">添加设备</string>
+    <string name="smart_home_search_device_hint">请输入搜索关键字</string>
+    <string name="smart_home_add_device_title_text">【品牌支持】</string>
+    <string name="smart_home_brand_introduce_text_default">海尔智家</string>
+    <string name="smart_home_brand_introduce_remark_text_default">小晨小晨，打开空调</string>
+    <string name="smart_home_brand_introduce_detail_title_text">品牌详情</string>
+    <string name="smart_home_brand_introduce_detail_remark_text">海尔是国际领先的家电企业。启用“海尔智家”技能,您可以方便地通过音箱语音控制家中的海尔家电,目前为:空调。海尔智家,定制美好生活,不止于全屋物联,多种自然便捷的交互方式,主动服务,为用户提供方案可定制,体验可迭代,智慧全场景的解决方案,全面提升生活品质。</string>
+    <string name="smart_home_brand_introduce_support_device_text">支持设备</string>
+    <string name="smart_home_brand_introduce_try_say_1">"打开空调"</string>
+    <string name="smart_home_brand_introduce_try_say_2">"空调调成智能模式"</string>
+    <string name="smart_home_brand_introduce_try_say_3">"温度调低3度"</string>
+    <string name="smart_home_brand_introduce_try_say_4">"设置空调自动关机时间3个小时"</string>
+    <string name="smart_home_brand_introduce_bind_device">绑定账号</string>
+    <string name="smart_home_bind_account_text_haier">海尔智家</string>
+    <string name="smart_home_bind_account_btn_text">立即登录</string>
+    <string name="smart_home_bind_account_account_text">账号</string>
+    <string name="smart_home_bind_account_account_hint">请输入手机号或邮箱</string>
+    <string name="smart_home_bind_account_password_text">密码</string>
+    <string name="smart_home_bind_account_password_hint">请输入密码</string>
+    <string name="smart_home_samba_switch_agreement_text">Samba协议</string>
+    <string name="smart_home_samba_switch_anonymous_access_text">匿名访问</string>
+    <string name="smart_home_samba_switch_password_change_text">Samba密码修改</string>
+    <string name="smart_home_samba_switch_access_addr_setting_text">Samba访问路径设置</string>
+    <string name="smart_home_samba_detail_text">1关闭匿名访问后, samba l的账号为15920552,默认密码为123456。\n2修改 Samba匿名访问或密码后,如果您的电脑端没有生效,请手动清理您的电脑端 Samba缓存(在电脑端命令行中执行命令: net use*/del/y)\n3. samba服务能让家里所有支持 samba智能摄像机、电脑、手机、电视或其他电子产品轻松访问设备慧家中被设为共享的数据。\n4关闭 samba服务后,将无法实现上述功能。\n5您的设备是否支持 Samba,请查阅相关设备说明书或者官方网站的相关信息。</string>
+
+
+    <!-- forget password -->
+    <string name="forget_step1_title">忘记密码</string>
+    <string name="forget_step1_title_remark">忘记密码可通过手机或邮箱找回</string>
+    <string name="forget_step1_body_no_account">您的账号不存在</string>
+    <string name="forget_step1_text_hint">请输入手机号或邮箱</string>
+    <string name="forget_step1_body_code_error">动态码错误</string>
+    <string name="search_result_text">搜索结果</string>
+    <string name="search_result_item_default_folder_text">我是汽车文件夹</string>
+    <string name="search_result_item_default_folder_time_text">2020年01月10日 22:34</string>
+    <string name="search_result_item_default_folder_size_text">17.4K</string>
+    <string name="search_result_item_default_car_text">我是汽车图片.jpg</string>
+    <string name="search_result_item_default_ppt_text">汽车文档.ppt</string>
+    <string name="search_result_item_default_mp3_text">汽车音频.mp3</string>
+
+    <!-- upload -->
+    <string name="upload_title_text" translatable="false">上传</string>
+
+    <!-- upload picture select picture folder -->
+    <string name="upload_picture_select_folder_text">选择相册</string>
+    <string name="upload_picture_select_folder_body_recent_text">最近项目</string>
+    <string name="upload_picture_select_folder_body_item_number_text_default">张</string>
+    <string name="upload_picture_select_folder_body_item_number_text_default_1">1831张</string>
+    <string name="upload_picture_select_folder_body_text_default_2">Dribble</string>
+    <string name="upload_picture_select_folder_body_item_number_text_default_2">234张</string>
+    <string name="upload_picture_select_folder_body_text_default_3">微博</string>
+    <string name="upload_picture_select_folder_body_item_number_text_default_3">36张</string>
+
+    <!-- upload picture select picture items -->
+    <string name="upload_picture_select_picture_number_text">已选择3个文件</string>
+    <string name="upload_select_target_folder_text">上传位置：我的空间</string>
+    <string name="upload_select_btn_text">上传</string>
+    <string name="upload_select_target_folder_main_text">选择目标文件夹</string>
+
+    <!-- upload select target folder -->
+    <string name="upload_target_folder_url_default_text">选择目标文件夹：/</string>
+    <string name="upload_select_target_folder_main_item_my_space_text">我的空间</string>
+    <string name="upload_select_target_folder_main_item_public_space_text">公共空间</string>
+    <string name="upload_select_target_folder_main_item_my_collect_text">我的收藏</string>
+    <string name="upload_select_target_folder_main_item_safe_box_text">保险箱</string>
+    <string name="upload_select_target_folder_sub_item_life_text">生活</string>
+    <string name="upload_select_target_folder_sub_item_travel_text">旅行</string>
+    <string name="upload_select_target_folder_sub_item_work_text">工作</string>
+    <string name="upload_select_target_folder_new_text">新建文件夹</string>
+
+    <!-- recycle -->
+    <string name="recycle_remark_default_text">删除的文件在回收站只里保留30天</string>
+    <string name="confirm_title_default_1_text">是否彻底删除这1个文件？</string>
+    <string name="confirm_title_remark_default_1_text">删除后将无法恢复</string>
+
+    <!-- picture detail -->
+    <string name="picture_name_default_text">IMG_558-DCIM-105APPLE.JPG</string>
+    <string name="picture_view_full_btn_text">查看原图（2.48MB）</string>
+    <string name="picture_more_create_time_text">创建时间：</string>
+    <string name="picture_more_file_addr_text">文件路径：</string>
+
+    <!-- picture -->
+    <string name="drop_down_tab_layout_item_text_pre">时间-</string>
+    <string name="drop_down_tab_layout_item_text_year">年</string>
+    <string name="drop_down_tab_layout_item_text_month">月</string>
+    <string name="drop_down_tab_layout_item_text_day">日</string>
+    <string name="drop_down_tab_layout_item_text_album">专辑</string>
+    <string name="picture_time_year_default_text_1">2020</string>
+    <string name="picture_time_year_default_text_2">2019</string>
+    <string name="picture_time_year_default_text_3">2018</string>
+    <string name="picture_time_day_default_text_1">2020年01月10日</string>
+    <string name="picture_time_day_default_text_2">2020年01月8日</string>
+    <string name="picture_time_month_default_text_1">2020年-1月</string>
+    <string name="picture_time_month_default_text_2">2019年-12月</string>
+    <string name="picture_album_line_folder_default_text">专辑文件夹</string>
+
+    <!-- share to -->
+    <string name="share_to_title_valid_day_text">文件分享有效期</string>
+    <string name="share_to_valid_day_radio_btn_1_text">1天过期</string>
+    <string name="share_to_valid_day_radio_btn_7_text">7天有效期</string>
+    <string name="share_to_valid_day_radio_btn_ever_text">永久有效期</string>
+    <string name="share_send_to_friend_text">发送给朋友</string>
+    <string name="share_to_private_link_text">复制私密链接</string>
+    <string name="share_to_code_text">生成二维码</string>
+    <string name="share_to_weixin_text">微信</string>
+    <string name="share_to_friend_circle_text">朋友圈</string>
+    <string name="share_to_qq_text">QQ</string>
+    <string name="share_to_qzone_text">QQ空间</string>
+    <string name="share_to_weibo_text">微博</string>
+    <string name="share_to_private_link_know_text">知道了</string>
+    <string name="share_to_private_link_title_text">文件分享链接已粘贴至剪切板</string>
+    <string name="share_to_private_link_addr_text">链接：https://carbonchain.com.dsge33rtryt_633775ff_577iuuu</string>
+    <string name="share_to_private_link_get_code_text">提取码：3S0T</string>
+
+    <!-- share to friend -->
+    <string name="share_to_friend_text">分享给好友</string>
+    <string name="custom_action_bar_share_text">分享</string>
+    <string name="share_to_friend_name_default_text_1">Mike</string>
+    <string name="share_to_friend_name_default_text_2">Lucas</string>
+    <string name="share_to_friend_name_default_text_3">Jay</string>
+    <string name="share_to_friend_name_default_text_4">Mary</string>
+
+    <!-- video -->
+    <string name="drop_down_tab_layout_item_text_less_1">小于1分钟</string>
+    <string name="drop_down_tab_layout_item_text_less_10">1-10分钟</string>
+    <string name="drop_down_tab_layout_item_text_less_30">10-30分钟</string>
+    <string name="drop_down_tab_layout_item_text_less_60">30-60分钟</string>
+    <string name="drop_down_tab_layout_item_text_big_60">大于60分钟</string>
+    <string name="video_time_default_text_1" translatable="false">2020年01月10日</string>
+    <string name="video_time_default_text_2" translatable="false">2020年01月09日</string>
+    <string name="video_sort_text_name" translatable="false">按名称排序</string>
+    <string name="video_sort_text_time" translatable="false">按时间排序</string>
+    <string name="video_sort_text_size" translatable="false">按大小排序</string>
+
+    <!-- phone backup -->
+    <string name="phone_backup_title_text">手机备份</string>
+    <string name="phone_backup_item_liuliang_backup_text">手机流量备份</string>
+    <string name="phone_backup_item_liuliang_up_down_text">手机流量上传/下载</string>
+    <string name="phone_backup_item_picture_text">相册自动备份</string>
+    <string name="phone_backup_item_video_text">视频自动备份</string>
+    <string name="phone_backup_item_friend_text">通讯录备份</string>
+    <string name="phone_backup_detail_backup_now_text">立即备份</string>
+    <string name="phone_backup_detail_history_version">历史版本</string>
+    <string name="phone_backup_confirm_recovery_text_default_1">是否恢复2020年1月10日的通讯录到手机？</string>
+    <string name="phone_backup_confirm_delete_text_default_1">是否删除2020年1月10日的通讯录备份？</string>
+
+    <!-- transfer -->
+    <string name="transfer_title_text">传输列表</string>
+    <string name="transfer_title_down_text">下载列表</string>
+    <string name="transfer_title_up_text">上传列表</string>
+    <string name="transfer_title_backup_text">备份</string>
+    <string name="transfer_downloading_text">下载中</string>
+    <string name="transfer_complete_text">已完成</string>
+    <string name="transfer_clear_text">清空</string>
+    <string name="transfer_backup_ing_text">备份中</string>
+    <string name="clear_missions_current_doing">清空进行中任务</string>
+    <string name="retry_missions_failure">重试失败任务</string>
+    <string name="clear_missions_failure">清除失败任务</string>
+
+    <!-- mp3 -->
+    <string name="mp3_title_text">音频</string>
+    <string name="mp3_tab_all_text">全部</string>
+    <string name="mp3_tab_album_text">专辑</string>
+    <string name="mp3_sort_by_name">按名称排序</string>
+    <string name="mp3_sort_by_time">按时间排序</string>
+    <string name="music_list_title_text">播放列表（12）</string>
+
+    <!-- document -->
+    <string name="drop_down_tab_layout_document_text_pre">时间-</string>
+    <string name="document_sort_text_name">按名称排序</string>
+    <string name="document_sort_text_time">按时间排序</string>
+    <string name="drop_down_tab_layout_document_item_text_all">全部</string>
+    <string name="drop_down_tab_layout_document_item_text_doc">doc</string>
+    <string name="drop_down_tab_layout_document_item_text_xlsx">xlsx</string>
+    <string name="drop_down_tab_layout_document_item_text_ppt">ppt</string>
+    <string name="drop_down_tab_layout_document_item_text_pdf">pdf</string>
+    <string name="drop_down_tab_layout_document_item_text_txt">txt</string>
+
+    <!-- document -->
+    <string name="document_default_text_1">一、教材与学生情况分析</string>
+    <string name="document_default_text_2">&#160;&#160;&#160;&#160;《按钮控制的LED》位于《Arduino创意机器人》课程的第一章《LED》的第三课，经过上一节课的学习，学生已经掌握了数字口的输出，熟悉了ArduBlock编程环境，学会了Arduino控制器与LED的连接。这一节课主要是实现按钮控制LED，从物理电路的连接上，增加了按钮；从编程上，增加了数字口的输入、选择结构等模块。</string>
+    <string name="document_default_text_3">二、教学目标</string>
+    <string name="document_default_text_4">1.通过制作按钮控制的LED，初步了解按钮，掌握选择结构以及数字口的输入。\n2.体验Arduino机器人控制的一般过程。\n3.体验按钮控制LED编程的过程，激发对编程的兴趣。</string>
+    <string name="document_default_text_5">三、教学重难点</string>
+    <string name="document_default_text_6">&#160;&#160;&#160;&#160;教学重点：数字口的输入 选择结构\n&#160;&#160;&#160;&#160;教学难点：数字口的输入</string>
+
+
+    <!-- secure -->
+    <string name="secure_unlock_text">保险箱解锁</string>
+    <string name="secure_title_please_input_graphic_password_text">请输入您的手势密码</string>
+    <string name="secure_other_unlock_finger_text">指纹解锁</string>
+    <string name="secure_other_unlock_password_text">密码解锁</string>
+
+
+    <!-- smart home camera -->
+    <string name="smart_home_camera_title_text">炭承摄像头</string>
+    <string name="smart_home_camera_sleep_confirm_title_text">确认要摄像头休眠？</string>
+    <string name="smart_home_camera_sleep_confirm_remark_text">休眠将无法使用实时监控、录像、拍照、视频通话等功能</string>
+    <string name="smart_home_camera_sleeping_text">摄像头休眠中</string>
+    <string name="smart_home_camera_switch_hd_high">高清</string>
+    <string name="smart_home_camera_switch_hd_fluent">流畅</string>
+    <string name="smart_home_camera_switch_hd_auto">自动</string>
+    <string name="smart_home_camera_recording_time_default">00:00:00</string>
+
+    <!-- smart home camera history -->
+    <string name="smart_home_camera_history_text">视频回看</string>
+    <string name="smart_home_camera_history_none_text">还没有视频内容哦</string>
+    <string name="smart_home_camera_history_day_explain_text">视频有效期</string>
+    <string name="smart_home_camera_history_day_2">2天</string>
+    <string name="smart_home_camera_history_day_7">7天</string>
+    <string name="smart_home_camera_history_day_14">14天</string>
+    <string name="smart_home_camera_history_day_30">30天</string>
+    <string name="smart_home_camera_history_day_45">45天</string>
+    <string name="smart_home_camera_history_day_60">60天</string>
+    <string name="smart_home_camera_history_day_75">75天</string>
+    <string name="smart_home_camera_history_day_90">90天</string>
+    <string name="camera_history_time_default_text_1">2020年02月14日（有效期：2天）</string>
+    <string name="camera_history_time_default_text_2">2020年02月13日（有效期：1天）</string>
+    <string name="camera_history_bottom_operation_save_ever_text">永久保存</string>
+    <string name="camera_history_bottom_operation_del_ever_text">彻底删除</string>
+    <string name="smart_home_camera_history_hour_default_text">2020年02月13日</string>
+    <string name="camera_history_time_hour_default_text_1">05:00-06:00（有效期：23小时）</string>
+
+    <!-- smart home camera calling -->
+    <string name="smart_home_camera_calling_text">正在呼叫...</string>
+
+    <!-- smart home camera photos -->
+    <string name="smart_home_camera_photos_text">相册</string>
+    <string name="smart_home_camera_photos_none_text">还没有内容哦</string>
+
+    <!-- smart home camera settings -->
+    <string name="smart_home_camera_settings_text">设置</string>
+    <string name="smart_home_camera_settings_overview_already_use_text">摄像头已用空间</string>
+    <string name="smart_home_settings_restart_btn_text">重启摄像头</string>
+    <string name="smart_home_camera_settings_status_light">状态灯</string>
+    <string name="smart_home_camera_settings_time_water_mark">时间水印</string>
+    <string name="smart_home_camera_settings_storage_path">存储位置</string>
+    <string name="smart_home_camera_settings_storage_path_default_text">camera/相册</string>
+    <string name="smart_home_camera_settings_sleep_setting">休眠设置</string>
+    <string name="smart_home_camera_sleep_settings_titile_text">休眠</string>
+    <string name="smart_home_camera_sleep_setting_remark_text">定时自动休眠</string>
+    <string name="smart_home_camera_sleep_setting_none_text">定时休眠为空，请点击右下角按钮添加</string>
+    <string name="smart_home_camera_sleep_settings_timed_text">定时休眠设置</string>
+    <string name="smart_home_camera_sleep_setting_new_repeat_text">重复</string>
+    <string name="smart_home_camera_sleep_setting_new_begin_time_text">开始时间</string>
+    <string name="smart_home_camera_sleep_setting_new_end_time_text">结束时间</string>
+    <string name="smart_home_camera_sleep_setting_new_repeat_time_default_text">一次</string>
+    <string name="smart_home_camera_sleep_setting_new_time_none_text">未设置</string>
+    <string name="smart_home_camera_sleep_setting_new_repeat_title_text">重复</string>
+    <string name="smart_home_camera_sleep_settings_new_begin_time_title">开始时间</string>
+    <string name="smart_home_camera_sleep_settings_new_end_time_title">结束时间</string>
+    <string name="smart_home_camera_sleep_settings_time_alarm">时间段休眠</string>
+
+
+    <!-- mine user info settings   -->
+    <string name="mine_user_info_sex">性别</string>
+    <string name="mine_user_info_phone">手机</string>
+    <string name="mine_user_info_email">安全邮箱</string>
+    <string name="mine_user_info_psd">账户密码</string>
+    <string name="mine_user_info_unlock_way">解锁方式</string>
+    <string name="mine_user_info_sign_out">退出账号</string>
+    <string name="mine_user_info_bind_emsil">绑定邮箱</string>
+    <string name="mine_user_info_bind_emsil_content">绑定邮箱有助于您的账号安全</string>
+    <string name="mine_user_info_bind_emsil_tishi">绑定您的邮箱</string>
+    <string name="mine_bind_emsil_input_email">请输入您的邮箱</string>
+    <string name="mine_bind_emsil_input_code">请输入动态码</string>
+    <string name="mine_bind_emsil_next">下一步</string>
+    <string name="mine_bind_emsil_save">保存</string>
+    <string name="mine_unlock_way_gesture">手势解锁</string>
+    <string name="mine_unlock_way_fingerprint">指纹解锁</string>
+    <string name="mine_unlock_way_face">人脸解锁</string>
+    <string name="mine_bind_email_input_verify_code">请输入验证码</string>
+    <string name="mine_bind_email_verify_code_msg">验证码已发至您的手机</string>
+
+    <string name="mine_modify_psd_input_old">请输入原密码</string>
+    <string name="mine_modify_psd_set">重置密码</string>
+    <string name="mine_modify_psd_set_two">确认重置密码</string>
+
+    <string name="mine_manage_user_admin">管理员</string>
+
+    <string name="splash">开始探索</string>
+    <string name="bindDevice">绑定设备</string>
+    <string name="scan">扫一扫</string>
+    <string name="scan_tips">为保障您的数据安全，请先扫描设备上的二维码创建炭承DID</string>
+    <string name="bindedDevice">已绑定设备</string>
+    <string name="creat_acount_success">管理员账户创建成功！</string>
+    <string name="create_did">一键生成DID</string>
+    <string name="create_fail">设备绑定失败</string>
+    <string name="rebind">重新绑定</string>
+
+    <string name="created_did">炭承身份DID已生成！</string>
+    <string name="download_did_tip">为了您的数据和账户安全，请先妥善保管</string>
+    <string name="tc_did">炭承身份DID</string>
+    <string name="go_on">继续</string>
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="set_PIN_code">设置PIN码</string>
+    <string name="set_pin_tips">为保护你的信息安全和账户隐私设置4位PIN密码</string>
+    <string name="complete">完成</string>
+    <string name="confirm_pin_code">确认PIN码</string>
+    <string name="confirm_pin_code_again_tip">再次确认4位PIN码</string>
+    <string name="errro_tip">密码不对哦!请重新输入</string>
+    <string name="unlock_screensaver">解锁屏保</string>
+    <string name="intput_screensaver_psd">请输入4位屏保密码</string>
+    <string name="forget_pin_code">忘记PIN码</string>
+    <string name="forget_pin_code_tip1">1.打开设备-设置-用户管理--重新绑定</string>
+    <string name="forget_pin_code_tip2">1.打开设备-设置-用户管理--重新绑定</string>
+    <string name="forget_pin_code_tip3">1.打开设备-设置-用户管理--重新绑定</string>
+</resources>

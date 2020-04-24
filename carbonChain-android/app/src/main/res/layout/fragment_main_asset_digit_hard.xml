@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/asset_digit_soft_none_text"
+        android:textSize="@dimen/asset_digit_soft_none_text_size"
+        android:textColor="@color/asset_digit_soft_none_text_color"
+        android:layout_marginTop="@dimen/asset_digit_soft_none_margin_top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/asset_digit_soft_add_wallet_btn_margin_left">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/asset_digit_soft_add_wallet_btn_bg">
+            <ImageView
+                android:id="@+id/asset_digit_soft_add_wallet_btn_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/asset_digit_soft_add_wallet_btn_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/asset_digit_soft_add_wallet_btn_icon_margin_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/asset_digit_soft_add_wallet_btn_icon"
+                android:text="@string/asset_digit_soft_add_wallet_btn_text"
+                android:textColor="@color/asset_digit_soft_add_wallet_btn_text_color"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="@dimen/asset_digit_soft_add_wallet_btn_icon_margin_left"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

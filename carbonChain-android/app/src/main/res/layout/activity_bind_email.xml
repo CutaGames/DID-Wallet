@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.storage.mine.ActivityBindEmail">
+
+    <RelativeLayout
+        android:id="@+id/custom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_action_bar_height"
+        android:background="@drawable/shadow_bg_bottom_line">
+        <RelativeLayout
+            android:id="@+id/custom_action_bar_icon_layout"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:id="@+id/iv_title_left_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/action_bar_icon_back"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_user_info_bind_emsil"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llBindEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_user_info_bind_emsil_tishi"
+            android:paddingTop="70dp"
+            android:paddingLeft="26dp"
+            android:textSize="32sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_user_info_bind_emsil_content"
+            android:paddingLeft="26dp"
+            android:paddingTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_bind_email_dp_44"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/mine_bind_email_dp_46"
+            android:layout_marginLeft="@dimen/mine_bind_email_dp_20"
+            android:layout_marginRight="@dimen/mine_bind_email_dp_20"
+            android:paddingTop="@dimen/mine_bind_email_dp_9"
+            android:paddingBottom="@dimen/mine_bind_email_dp_9"
+            android:background="@drawable/mine_bind_email_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mine_bind_email_dp_9"
+                android:background="@mipmap/mine_bind_email"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mine_bind_email_dp_9"
+                android:hint="@string/mine_bind_emsil_input_email"
+                android:background="@null"
+                android:textSize="@dimen/mine_user_info_sp_14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_bind_email_dp_44"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/mine_bind_email_dp_30"
+            android:layout_marginLeft="@dimen/mine_bind_email_dp_20"
+            android:layout_marginRight="@dimen/mine_bind_email_dp_20"
+            android:paddingTop="@dimen/mine_bind_email_dp_9"
+            android:paddingBottom="@dimen/mine_bind_email_dp_9"
+            android:background="@drawable/mine_bind_email_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mine_bind_email_dp_9"
+                android:background="@mipmap/mine_bind_email_dynamic_code"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mine_bind_email_dp_9"
+                android:hint="@string/mine_bind_emsil_input_code"
+                android:background="@null"
+                android:textSize="@dimen/mine_user_info_sp_14"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_bind_email_dp_44"
+            android:background="@drawable/mine_bind_email_next_bg"
+            android:layout_marginLeft="@dimen/mine_bind_email_dp_20"
+            android:layout_marginRight="@dimen/mine_bind_email_dp_20"
+            android:layout_marginTop="@dimen/mine_bind_email_dp_30"
+            android:text="@string/mine_bind_emsil_next"
+            android:gravity="center"
+            android:textColor="@color/mine_user_info_FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llInPutVerifyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_bind_email_input_verify_code"
+            android:paddingTop="70dp"
+            android:paddingLeft="26dp"
+            android:textSize="32sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_bind_email_verify_code_msg"
+            android:paddingLeft="26dp"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86-15902100000"
+            android:paddingLeft="26dp"
+            android:paddingTop="5dp"/>
+
+
+        <com.tancheng.carbonchain.utils.CustomEditText
+            android:id="@+id/etCustomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_bind_email_dp_40"
+            android:layout_marginTop="@dimen/mine_bind_email_dp_30"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:psdSize="6"
+            app:frameWidth="5dp"
+            app:roundRadius="4dp"
+            app:psdRoundWidth="3dp"
+            app:psdRoundColor="#ff333333"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新获取（50秒）"
+            android:paddingLeft="26dp"
+            android:paddingTop="18dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

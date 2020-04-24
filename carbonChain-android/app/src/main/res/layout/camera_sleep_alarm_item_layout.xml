@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/item_delete"
+        android:layout_width="86dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smart_home_camera_sleep_setting_item_delete_bg"
+            android:gravity="center"
+            android:text="@string/public_delete_text"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_bg_camera_setting_item">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/smart_home_camera_sleep_settings_time_alarm"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/public_text_size_16_sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/public_text_size_14_sp"
+                android:text="18:40-19:40"
+                android:textColor="#ffb8b8b8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/public_text_size_14_sp"
+                android:textColor="#ffb8b8b8"
+                android:text="单次"/>
+        </LinearLayout>
+
+        <com.tancheng.carbonchain.utils.MySwitchButton
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            app:sb_show_indicator="false"
+            app:sb_checked_color="#FF0066FF"
+            app:sb_checked="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- custom action bar begin -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_action_bar_height"
+        android:background="@drawable/shadow_bg_bottom_line">
+        <!-- back arrow -->
+        <ImageView
+            android:id="@+id/iv_title_left_back"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/action_bar_icon_back"/>
+
+        <!-- title center -->
+        <TextView
+            android:id="@+id/custom_action_bar_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/asset_import_coin_detail_title_text"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+
+        <!-- scan -->
+        <ImageView
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_alignParentRight="true"
+            android:padding="11dp"
+            android:src="@mipmap/scan_icon"/>
+
+    </RelativeLayout>
+    <!-- custom action bar end -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- tab and view pagers    height 200dp -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asset_digit_tablayout_wallet_soft_hard_height"
+            android:background="@android:color/white"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ff0066ff"
+            />
+        <com.tancheng.carbonchain.activities.asset.NoScrollViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="@string/asset_import_wallet_set_password_text"
+            android:textSize="@dimen/public_text_size_16_sp"
+            android:textColor="@android:color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="@string/asset_import_wallet_set_password_remark_text"
+            android:textSize="@dimen/public_text_size_12_sp"
+            android:textColor="#ff4a4a4a"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_bind_phone_body_item_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_input_bg">
+            <ImageView
+                android:id="@+id/iv_password_1"
+                android:layout_width="@dimen/login_icon_account_width"
+                android:layout_height="@dimen/login_icon_account_height"
+                android:src="@mipmap/register_bind_password_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/login_icon_account_margin_left"/>
+            <ImageView
+                android:id="@+id/iv_password_1_blind"
+                android:layout_width="@dimen/login_icon_account_width"
+                android:layout_height="@dimen/login_icon_account_height"
+                android:src="@mipmap/register_bind_password_confirm_status_blind"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/login_icon_account_error_margin_right"
+                android:visibility="visible"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_edit_text_account_text_size"
+                android:hint="@string/asset_import_wallet_set_password_hint"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@id/iv_password_1"
+                android:layout_toLeftOf="@id/iv_password_1_blind"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/login_edit_text_margin_left"
+                android:layout_marginRight="@dimen/login_edit_text_margin_left"
+                android:background="#fff7f7f7"
+                android:textCursorDrawable="@android:color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_bind_phone_body_item_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_input_bg">
+            <ImageView
+                android:id="@+id/iv_password_2"
+                android:layout_width="@dimen/login_icon_account_width"
+                android:layout_height="@dimen/login_icon_account_height"
+                android:src="@mipmap/register_bind_password_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/login_icon_account_margin_left"/>
+            <ImageView
+                android:id="@+id/iv_password_2_blind"
+                android:layout_width="@dimen/login_icon_account_width"
+                android:layout_height="@dimen/login_icon_account_height"
+                android:src="@mipmap/register_bind_password_confirm_status_blind"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/login_icon_account_error_margin_right"
+                android:visibility="visible"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/login_edit_text_account_text_size"
+                android:hint="@string/asset_import_wallet_set_password_hint_confirm"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@id/iv_password_2"
+                android:layout_toLeftOf="@id/iv_password_2_blind"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/login_edit_text_margin_left"
+                android:layout_marginRight="@dimen/login_edit_text_margin_left"
+                android:background="#fff7f7f7"
+                android:textCursorDrawable="@android:color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"/>
+        
+        <TextView
+            android:id="@+id/tv_start_import"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asset_digit_soft_add_wallet_start_import_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/asset_digit_soft_add_wallet_start_import_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/public_text_size_14_sp"
+            android:gravity="center"
+            android:background="@drawable/asset_digit_soft_add_wallet_start_import_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="56"/>
+    </LinearLayout>
+
+</LinearLayout>

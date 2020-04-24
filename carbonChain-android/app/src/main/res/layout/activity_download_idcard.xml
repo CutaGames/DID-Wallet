@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlActivity"
+    android:background="@color/mine_user_info_FFFFFF"
+    tools:context=".activities.bindsevice.DownloadIDCardActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/action_bar_icon_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_below="@id/rlTitle"
+        android:background="@color/color_BBBBBB" />
+
+    <TextView
+        android:id="@+id/tvCreateDiD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/created_did"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_117"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_12E067"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:id="@+id/tvDownloadDidTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCreateDiD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/download_did_tip"
+        android:textColor="@color/color_BBBBBB"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginBottom="@dimen/dp_40"/>
+
+    <ImageView
+        android:layout_below="@id/tvDownloadDidTip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_256"
+        android:background="@mipmap/card_blue"/>
+
+    <ImageView
+        android:id="@+id/ivIDBg"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_30"
+        android:visibility="gone"
+        android:background="@color/mine_user_info_FFFFFF" />
+
+    <ImageView
+        android:id="@+id/ivCode"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_250"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@color/mine_user_info_FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/tvTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_360"
+        android:text="@string/tc_did"
+        android:textColor="@color/mine_user_info_FFFFFF"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tvDID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleID"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_28"
+        android:text="5KYZdUEo39z3FPrtuX2QbbwGnNP5zTd7yyr2SC1j299sBCnWjss"
+        android:textColor="@color/mine_user_info_FFFFFF"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/ivDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_410"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@mipmap/icon_download" />
+
+    <RelativeLayout
+        android:id="@+id/rlIDCardImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDownloadDidTip"
+        android:background="@mipmap/card_blue"
+        android:visibility="gone">
+
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvGoOn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_110"
+        android:layout_marginRight="@dimen/dp_110"
+        android:layout_marginBottom="@dimen/dp_33"
+        android:background="@drawable/asset_transfer_coin_apply_complete_btn_bg"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/go_on"
+        android:textColor="@color/color_0066FF" />
+</RelativeLayout>

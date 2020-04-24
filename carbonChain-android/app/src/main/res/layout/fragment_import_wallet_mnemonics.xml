@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/asset_add_soft_wallet_import_mnemonics_title_text"
+        android:textSize="@dimen/public_text_size_12_sp"
+        android:textColor="#ff656565"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/public_text_size_16_sp"
+        android:hint="@string/asset_add_soft_wallet_import_mnemonics_hint_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top"
+        android:maxLines="10"
+        android:background="@drawable/public_edit_text_bg"
+        android:textCursorDrawable="@color/public_edit_text_cursor_color"/>
+</LinearLayout>

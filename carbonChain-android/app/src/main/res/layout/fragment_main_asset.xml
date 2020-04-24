@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gyf="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/asset_tab_top"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="13dp">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/asset_tab_layout_digit_data"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white"
+                app:tabMode="fixed"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingStart="20dp"
+                app:tabPaddingEnd="20dp"
+                app:tabMaxWidth="160dp"
+                app:tabMinWidth="84dp"
+                app:tabTextColor="@color/asset_tab_text_color_color"
+                app:tabSelectedTextColor="@color/asset_tab_text_color_color_selected"
+                app:tabBackground="@drawable/asset_tab_layout_digit_data_bg_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_my_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_wallet"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_5"
+                />
+
+        </LinearLayout>
+
+        <com.tancheng.carbonchain.activities.asset.NoScrollViewPager
+            android:id="@+id/asset_digit_data_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/asset_tab_top"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/asset_property_drawer_right_layout"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- custom action bar begin -->
+    <RelativeLayout
+        android:id="@+id/custom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_action_bar_height"
+        android:background="@drawable/shadow_bg_bottom_line">
+        <RelativeLayout
+            android:id="@+id/custom_action_bar_icon_layout"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:id="@+id/iv_title_left_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/action_bar_icon_back"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/smart_home_brand_introduce_text_default"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+    </RelativeLayout>
+    <!-- custom action bar end -->
+
+    <Button
+        android:id="@+id/bind_account"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/smart_home_brand_introduce_bind_device"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:background="@drawable/smart_home_brand_introduce_bind_device_bg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/custom_action_bar"
+        android:layout_above="@id/bind_account">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+                <ImageView
+                    android:id="@+id/brand_introduce_logo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="11dp"
+                    android:src="@mipmap/smart_home_brand_introduce_haier"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/brand_introduce_logo"
+                    android:text="@string/smart_home_brand_introduce_text_default"
+                    android:textSize="@dimen/smart_home_brand_introduce_text_size"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/brand_introduce_logo"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/smart_home_brand_introduce_remark_text_default"
+                    android:textSize="@dimen/smart_home_brand_introduce_remark_text_size"
+                    android:textColor="@color/smart_home_brand_introduce_remark_text_color"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginRight="@dimen/smart_home_brand_introduce_detail_title_margin_right"
+                android:layout_marginTop="@dimen/smart_home_brand_introduce_detail_title_margin_top"
+                android:text="@string/smart_home_brand_introduce_detail_title_text"
+                android:textSize="@dimen/smart_home_brand_introduce_detail_title_text_size"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginRight="@dimen/smart_home_brand_introduce_detail_title_margin_right"
+                android:layout_marginTop="@dimen/smart_home_brand_introduce_detail_remark_margin_top"
+                android:text="@string/smart_home_brand_introduce_detail_remark_text"
+                android:textSize="@dimen/smart_home_brand_introduce_detail_remark_text_size"
+                android:textColor="@color/smart_home_brand_introduce_detail_remark_text_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginRight="@dimen/smart_home_brand_introduce_detail_title_margin_right"
+                android:layout_marginTop="@dimen/smart_home_brand_introduce_support_device_margin_top"
+                android:text="@string/smart_home_brand_introduce_support_device_text"
+                android:textSize="@dimen/smart_home_brand_introduce_support_device_text_size"
+                android:textColor="@android:color/black"/>
+            
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/smart_home_brand_introduce_air_conditioner"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:gravity="center"
+                android:text="空调"
+                android:textColor="@color/smart_home_brand_introduce_support_device_text_color"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginTop="28dp"
+                android:text="试试对我说"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginTop="28dp"
+                android:text="@string/smart_home_brand_introduce_try_say_1"
+                android:textColor="#ff8b8b8d"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginTop="8dp"
+                android:text="@string/smart_home_brand_introduce_try_say_2"
+                android:textColor="#ff8b8b8d"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginTop="8dp"
+                android:text="@string/smart_home_brand_introduce_try_say_3"
+                android:textColor="#ff8b8b8d"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smart_home_brand_introduce_detail_title_margin_left"
+                android:layout_marginTop="8dp"
+                android:text="@string/smart_home_brand_introduce_try_say_4"
+                android:textColor="#ff8b8b8d"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

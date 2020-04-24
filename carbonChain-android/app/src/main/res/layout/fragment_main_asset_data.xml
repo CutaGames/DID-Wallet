@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asset_data_image_height"
+        android:layout_marginLeft="@dimen/asset_data_image_margin_left"
+        android:layout_marginRight="@dimen/asset_data_image_margin_left"
+        android:layout_marginTop="@dimen/asset_digit_layout_all_margin_top"
+        android:src="@mipmap/asset_data_image_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asset_digit_tablayout_wallet_soft_hard_height"
+            android:background="@drawable/shadow_bg_bottom_line"
+            android:layout_centerVertical="true"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ff0066ff"
+            />
+        <ImageView
+            android:id="@+id/iv_add_data_icon"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/asset_digit_add_wallet_icon"
+            android:paddingLeft="18dp"
+            android:paddingRight="2dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <com.tancheng.carbonchain.activities.asset.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/public_item_margin_left_5_dp"
+        android:layout_marginRight="@dimen/public_item_margin_right_5_dp"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- downloading -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/transfer_downloading_bg_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/transfer_backup_ing_text"
+            android:textSize="@dimen/transfer_downloading_text_size"
+            android:textColor="@color/transfer_downloading_text_color"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+            <ImageView
+                android:id="@+id/transfer_item_icon"
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/transfer_item_icon_video_default"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/transfer_item_icon"
+                android:background="@drawable/shadow_bg_bottom_line">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="视频"
+                    android:textSize="@dimen/transfer_item_title_text_size"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="9dp"
+                    android:text="892M/1G"
+                    android:textSize="@dimen/transfer_item_size_text_size"
+                    android:textColor="@color/transfer_item_size_text_color"/>
+                <!--<ImageView-->
+                    <!--android:layout_width="24dp"-->
+                    <!--android:layout_height="24dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="14dp"-->
+                    <!--android:src="@mipmap/transfer_downloading_suspend"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginRight="80dp"
+                    android:text="1.4M/s"
+                    android:textSize="@dimen/transfer_item_speed_text_size"
+                    android:textColor="@color/transfer_item_speed_text_color"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- complete -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/transfer_downloading_bg_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/transfer_complete_text"
+            android:textSize="@dimen/transfer_complete_text_size"
+            android:textColor="@color/transfer_complete_text_color"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/shadow_bg_bottom_line">
+            <ImageView
+                android:id="@+id/transfer_item_icon2"
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/transfer_item_picture_default"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/transfer_item_icon2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="图片"
+                    android:textSize="@dimen/transfer_item_title_text_size"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="9dp"
+                    android:text="备份完成（222）"
+                    android:textSize="@dimen/transfer_item_size_text_size"
+                    android:textColor="@color/transfer_item_size_text_color"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

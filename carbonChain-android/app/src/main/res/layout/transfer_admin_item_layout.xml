@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_160"
+        android:background="@drawable/base_yuan_white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/MyCheckbox"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginLeft="@dimen/dp_9"
+            android:layout_marginTop="@dimen/dp_9"
+            android:layout_gravity="left"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_gravity="center"
+            android:background="@mipmap/default_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mike"
+            android:layout_marginTop="@dimen/dp_36"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay">
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_bottom_cancel_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/public_bg_white_corners_8"
+        android:gravity="center"
+        android:text="@string/public_cancel_text"
+        android:textSize="@dimen/public_text_size_16_sp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/public_bg_white_corners_8"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/create_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asset_add_new_wallet_line_height"
+            android:text="@string/asset_add_soft_wallet_create_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/public_text_size_16_sp"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff2f6fc"/>
+        <TextView
+            android:id="@+id/import_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asset_add_new_wallet_line_height"
+            android:text="@string/asset_add_soft_wallet_import_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/public_text_size_16_sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

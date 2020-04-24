@@ -1,0 +1,139 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.tancheng.carbonchain"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    greendao {
+        // 数据库版本号
+        schemaVersion 20
+        // 设置生成数据库文件的目录，默认是在build中，可以将生成的文件放到我们的java目录中
+        targetGenDir 'src/main/java'
+        // 设置生成的数据库相关文件的包名，默认为entity所在的包名
+        daoPackage 'com.tancheng.carbonchain.db.gen'
+    }
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'lib/x86_64/darwin/libscrypt.dylib'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //自定义弹框
+    implementation 'com.github.razerdp:BasePopup:2.1.9'
+
+    //饼状图
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+
+    //Android 版本
+    implementation 'com.king.zxing:zxing-lite:1.1.6'
+    implementation 'org.greenrobot:greendao:3.2.2'
+
+    // add library
+
+    //网络请求方式
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.android.support:multidex:1.0.2'
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //工具类 https://github.com/Blankj/AndroidUtilCode/tree/master/lib/utilcode
+    implementation 'com.blankj:utilcode:1.26.0'
+    debugImplementation 'com.idescout.sql:sqlscout-server:4.1'
+    releaseImplementation 'com.idescout.sql:sqlscout-server-noop:4.1'
+
+    // BaseRecyclerViewAdapterHelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+
+    // FlexboxLayoutManager
+    implementation 'com.google.android:flexbox:1.0.0'
+
+    // or, for Android:
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+    // 以太坊开发库
+    implementation 'org.web3j:core:4.1.0-android'
+
+    // bitcoinj
+    implementation 'org.bitcoinj:bitcoinj-core:0.14.7'
+
+    // bitcoin-rpc-client
+//    implementation 'wf.bitcoin:bitcoin-rpc-client:1.1.0'
+
+    // ViewPagerIndicator 参考：https://github.com/DthFish/ScrollViewIndicator
+    implementation 'com.shizhefei:ViewPagerIndicator:1.1.6'
+    implementation 'pub.devrel:easypermissions:1.0.1'
+
+    // EmptyLayout https://github.com/quanke/AndroidEmptyLayout
+    implementation 'com.github.quanke:AndroidEmptyLayout:v1.0.0'
+
+    // 沉浸式状态栏 https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    //banner https://github.com/pinguo-zhouwei/MZBannerView
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.2'
+
+    //eventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    // fastjson
+    implementation 'com.alibaba:fastjson:1.2.68'
+
+    // commons-lang3
+    implementation 'org.apache.commons:commons-lang3:3.10'
+    implementation files('libs/bitcoin-rpc-1.2.0.jar')
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- custom action bar begin -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:background="@drawable/shadow_bg_bottom_line">
+            <!-- back arrow -->
+            <ImageView
+                android:id="@+id/iv_title_left_back"
+                android:layout_width="@dimen/custom_action_bar_height"
+                android:layout_height="@dimen/custom_action_bar_height"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/action_bar_icon_back"/>
+
+            <!-- title center -->
+            <TextView
+                android:id="@+id/custom_action_bar_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/coin_name_btc"
+                android:textColor="@color/custom_action_bar_title_text_color"
+                android:textSize="@dimen/custom_action_bar_title_text_size"/>
+
+        </RelativeLayout>
+        <!-- custom action bar end -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_item_height_68_dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/shadow_bg_bottom_line">
+            <ImageView
+                android:id="@+id/iv_coin"
+                android:layout_width="@dimen/public_item_icon_width"
+                android:layout_height="@dimen/public_item_icon_height"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/coin_icon_btc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_coin"
+                android:text="@string/asset_soft_wallet_addr_text"
+                android:textSize="@dimen/public_text_size_16_sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_coin"
+                android:layout_alignParentBottom="true"
+                android:text="sddfsjjs837584hdfsdfasfjw934293923"
+                android:textSize="@dimen/public_text_size_13_sp"
+                android:textColor="#ff8b8b8d"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wallet_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_item_height_44_dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shadow_bg_bottom_line">
+            <TextView
+                android:id="@+id/tv_wallet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/asset_soft_wallet_name_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp"/>
+            <ImageView
+                android:id="@+id/right_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/main_mine_item_arrow_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/right_arrow"
+                android:layout_marginRight="10dp"
+                android:text="BTC2"
+                android:textSize="@dimen/public_text_size_14_sp"
+                android:textColor="#ff888888"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_btn_height_44_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/asset_soft_wallet_remove_btn_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/public_text_size_16_sp"
+        android:background="@drawable/bottom_bg_btn_linear_red"/>
+
+
+</RelativeLayout>

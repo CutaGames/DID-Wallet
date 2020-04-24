@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- custom action bar begin -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_action_bar_height"
+        android:background="@drawable/shadow_bg_bottom_line">
+        <!-- back arrow -->
+        <ImageView
+            android:id="@+id/iv_title_left_back"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/action_bar_icon_back"/>
+
+        <!-- title center -->
+        <TextView
+            android:id="@+id/custom_action_bar_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/asset_select_transfer_coin_device_confirm_text"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+
+    </RelativeLayout>
+    <!-- custom action bar end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/asset_transfer_coin_confirm_device_text"
+                android:textColor="#ff4a4a4a"
+                android:textSize="@dimen/public_text_size_14_sp"/>
+            <ImageView
+                android:id="@+id/asset_transfer_coin_confirm_device_image"
+                android:layout_width="269dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/asset_transfer_coin_confirm_device_image"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- custom action bar begin -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42">
+        <!-- back arrow -->
+        <ImageView
+            android:id="@+id/iv_title_left_back"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/action_bar_icon_back"/>
+
+        <!-- title center -->
+        <TextView
+            android:id="@+id/custom_action_bar_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/asset_data_my_health_document"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+
+    </RelativeLayout>
+    <!-- custom action bar end -->
+
+    <!-- steps title begin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asset_data_add_steps_height"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/register_bind_device_step_1_blue"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/asset_data_add_steps_1_text"
+            android:textSize="@dimen/public_text_size_12_sp"
+            android:textColor="@color/register_bind_device_text_color_blue"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="7dp"
+            android:background="@color/register_bind_device_text_color_grave"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/register_bind_device_step_2_grave"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/asset_data_add_steps_2_text"
+            android:textSize="@dimen/public_text_size_12_sp"
+            android:textColor="@color/register_bind_device_text_color_grave"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="7dp"
+            android:background="@color/register_bind_device_text_color_grave"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/register_bind_device_step_3_grave"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/asset_data_add_steps_3_text"
+            android:textSize="@dimen/public_text_size_12_sp"
+            android:textColor="@color/register_bind_device_text_color_grave"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <!-- steps title end -->
+
+    <!-- step 1 begin -->
+    <ScrollView
+        android:id="@+id/step_1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/asset_data_add_steps_content_bg"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!-- step 1 sub 1 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_1_sub_1_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_name_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:textColor="@color/asset_data_add_item_edit_text_color"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@drawable/public_edit_text_cursor_color"
+                        android:hint="@string/asset_data_add_item_edit_text_hint_input"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_birthday_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_phone_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:textColor="@color/asset_data_add_item_edit_text_color"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@drawable/public_edit_text_cursor_color"
+                        android:hint="@string/asset_data_add_item_edit_text_hint_input"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_jiguan_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:textColor="@color/asset_data_add_item_edit_text_color"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@drawable/public_edit_text_cursor_color"
+                        android:hint="@string/asset_data_add_item_edit_text_hint_input"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_mingzu_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:textColor="@color/asset_data_add_item_edit_text_color"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@drawable/public_edit_text_cursor_color"
+                        android:hint="@string/asset_data_add_item_edit_text_hint_input"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_sex_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_shengao_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_step_1_sub_1_shengao_cm"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_weight_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_step_1_sub_1_weight_kg"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_bmi_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_auto"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_step_1_sub_1_bmi_auto"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_blood_type_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_1_yaowei_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:textCursorDrawable="@drawable/public_edit_text_cursor_color"
+                            android:hint="@string/asset_data_add_item_edit_text_hint_input"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_step_1_sub_1_yaowei_cm"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- step 1 sub 1 end -->
+
+            <!-- step 1 sub 2 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_1_sub_2_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_2_top_xueli_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_2_occupation_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:textColor="@color/asset_data_add_item_edit_text_color"
+                        android:textSize="@dimen/public_text_size_16_sp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textCursorDrawable="@drawable/public_edit_text_cursor_color"
+                        android:hint="@string/asset_data_add_item_edit_text_hint_input"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- step 1 sub 2 end -->
+
+            <!-- step 1 sub 3 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_1_sub_2_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_3_merry_status_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/asset_data_add_item_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_1_sub_2_birth_status_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- step 1 sub 3 end -->
+            
+            <!-- step 1 next btn -->
+            <Button
+                android:id="@+id/btn_step_1_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/public_btn_height_44_dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/asset_data_add_step_1_next_text"
+                android:textSize="@dimen/public_text_size_14_sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/public_btn_bg_blue"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- step 1 end -->
+
+
+
+    <!-- step 2 begin -->
+    <ScrollView
+        android:id="@+id/step_2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/asset_data_add_steps_content_bg"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!-- step 2 sub 1 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_2_sub_1_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+                <com.tancheng.carbonchain.utils.AutoLinefeedLayout
+                    android:id="@+id/auto_line_feed_layout_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="暂无"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="高血压"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="心脏病"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="脑梗脑出血"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="过敏性疾病"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="哮喘"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="癫痫病"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="白癜风"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="近视"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="高脂血症"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="冠心病"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="糖尿病NOS"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="脑卒中(中风)"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="乙型病毒性肝炎"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肝癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="甲状腺恶性肿瘤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="乳腺癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肺癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肝癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="直肠癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="结肠癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肾癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="前列腺癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp" />
+
+                </com.tancheng.carbonchain.utils.AutoLinefeedLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_other_hint_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_2_sub_1_family_members_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="14dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_input_remark_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+
+            </LinearLayout>
+            <!-- step 2 sub 1 end -->
+
+
+
+
+            <!-- step 2 sub 2 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_2_sub_2_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+                <com.tancheng.carbonchain.utils.AutoLinefeedLayout
+                    android:id="@+id/auto_line_feed_layout_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="暂无"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="颅脑手术"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="颈部手术"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="胸部手术"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="剖宫产"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="腹部手术"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="背部手术"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="四肢手术"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="骨折"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="头部外伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="烧伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="烫伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="刀砍伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="刀刺伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肌腱损伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="皮肤软组织损伤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                </com.tancheng.carbonchain.utils.AutoLinefeedLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_other_hint_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_2_sub_2_seek_time_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="14dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_input_remark_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+            </LinearLayout>
+            <!-- step 2 sub 2 end -->
+
+
+
+
+
+            <!-- step 2 sub 3 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_2_sub_3_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+                <com.tancheng.carbonchain.utils.AutoLinefeedLayout
+                    android:id="@+id/auto_line_feed_layout_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="暂无"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="高血压"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="高脂血症"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="糖尿病NOS"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="冠心病"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="脑卒中(中风) "
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="乙型病毒性肝炎"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="痛风NOS"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="脂肪肝"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="高尿酸血症"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="鼻炎"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="胃炎"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="贫血NOS"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="前列腺癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="甲状腺恶性肿瘤"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="乳腺癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肺癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肝癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="直肠癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="结肠癌"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="肾癌 "
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                </com.tancheng.carbonchain.utils.AutoLinefeedLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_other_hint_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_2_sub_2_seek_time_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="14dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_input_remark_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+            </LinearLayout>
+            <!-- step 2 sub 3 end -->
+
+
+
+
+
+            <!-- step 2 sub 4 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_2_sub_4_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asset_data_add_item_line_height"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shadow_bg_bottom_line">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="92"
+                        android:gravity="center_vertical"
+                        android:text="@string/asset_data_add_step_2_sub_4_allergy_type_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/public_text_size_16_sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/asset_data_add_item_edit_text_hint_select"
+                            android:textColor="@color/asset_data_add_item_edit_text_color"
+                            android:textSize="@dimen/public_text_size_16_sp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/arrow_down_select_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/asset_data_add_step_2_sub_4_allergy_source_text"
+                    android:textSize="@dimen/public_text_size_14_sp"
+                    android:textColor="@android:color/black"/>
+
+                <com.tancheng.carbonchain.utils.AutoLinefeedLayout
+                    android:id="@+id/auto_line_feed_layout_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="暂无"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="海鲜"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="花粉"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="牛奶"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="坚果"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="酒精"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="皮毛"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="芒果"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="笋"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="香菇"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="黄瓜"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="化妆品"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/asset_data_add_selectable_text_view_bg_false"
+                        android:padding="4dp"
+                        android:text="油漆"
+                        android:textColor="#ffababab"
+                        android:textSize="@dimen/public_text_size_12_sp"/>
+
+                </com.tancheng.carbonchain.utils.AutoLinefeedLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_other_hint_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/asset_data_add_step_2_sub_4_allergy_symptom_text"
+                    android:textSize="@dimen/public_text_size_14_sp"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="14dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_input_allergy_symptom_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+            </LinearLayout>
+            <!-- step 2 sub 4 end -->
+
+
+
+
+
+            <!-- step 2 sub 5 begin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/asset_data_add_step_2_sub_5_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/public_text_size_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shadow_bg_left_right_bottom_2"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="14dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/public_text_size_16_sp"
+                    android:hint="@string/asset_data_add_input_current_medicine_and_health_products_text"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:background="@drawable/public_edit_text_bg"
+                    android:textCursorDrawable="@drawable/public_edit_text_cursor_color"/>
+            </LinearLayout>
+
+
+            <!-- step 2 sub 5 end -->
+
+
+
+
+
+            <!-- step 2 next btn -->
+            <Button
+                android:id="@+id/btn_step_2_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/public_btn_height_44_dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/asset_data_add_step_2_next_text"
+                android:textSize="@dimen/public_text_size_14_sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/public_btn_bg_blue"/>
+        </LinearLayout>
+    </ScrollView>
+    <!-- step 2 end -->
+
+</LinearLayout>

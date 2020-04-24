@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tancheng.carbonchain.activities.storage.picture.ActivityPictureDetail">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- custom action bar begin -->
+        <RelativeLayout
+            android:id="@+id/custom_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:background="@drawable/shadow_bg_bottom_line">
+            <RelativeLayout
+                android:id="@+id/custom_action_bar_icon_layout"
+                android:layout_width="@dimen/custom_action_bar_height"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+                <ImageView
+                    android:id="@+id/iv_title_left_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/action_bar_icon_back"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/picture_name_default_text"
+                android:textColor="@color/custom_action_bar_title_text_color"
+                android:textSize="@dimen/custom_action_bar_title_text_size"/>
+        </RelativeLayout>
+        <!-- custom action bar end -->
+
+
+
+        <!-- view full picture button -->
+        <Button
+            android:id="@+id/picture_view_full_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/picture_view_full_btn_height"
+            android:text="@string/picture_view_full_btn_text"
+            android:textColor="@color/picture_view_full_btn_text_color"
+            android:textSize="@dimen/picture_view_full_btn_text_size"
+            android:paddingLeft="@dimen/picture_view_full_btn_text_padding_left"
+            android:paddingRight="@dimen/picture_view_full_btn_text_padding_right"
+            android:background="@drawable/picture_view_full_btn_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/picture_view_full_btn_margin_bottom"/>
+
+        <ImageView
+            android:id="@+id/picture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/custom_action_bar"
+            android:layout_above="@id/picture_view_full_btn"
+            android:layout_marginTop="@dimen/picture_preview_margin_top"
+            android:layout_marginBottom="@dimen/picture_preview_margin_bottom"
+            android:src="@mipmap/picture_default_4"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

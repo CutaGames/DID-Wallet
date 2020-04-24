@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <include layout="@layout/activity_title_layout" />
+
+        <!--  币种信息 -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dp_10"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:id="@+id/iv_token_logo"
+               android:layout_width="@dimen/dp_44"
+               android:layout_height="@dimen/dp_44"
+               android:src="@mipmap/coin_icon_btc"/>
+           <TextView
+               android:id="@+id/tv_token_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="2.5 BTC"
+               android:textSize="@dimen/sp_16"
+               android:textColor="@color/black"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="@dimen/dp_15"/>
+
+       </LinearLayout>
+
+        <!--  选择地址 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp">
+
+            <EditText
+                android:id="@+id/et_transfer_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入收款人地址"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/lly_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_transfer_contact" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mine_menu_divider_color" />
+        <!--  金额 -->
+        <EditText
+            android:id="@+id/send_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="@null"
+            android:hint="转账金额"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mine_menu_divider_color" />
+        <!--  备注 -->
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="@null"
+            android:hint="备注"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mine_menu_divider_color" />
+
+        <!-- fee预估展示 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="矿工费用"
+                android:textColor="@color/black29"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_gas_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:text="0.00021 ether"
+                android:textColor="@color/black66"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- 速度设置 -->
+        <LinearLayout
+            android:id="@+id/lly_gas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--  调节转账速度 -->
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="12dp"
+                android:progress="15" />
+
+            <!--  转账速度 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="慢"
+                    android:textColor="@color/black66"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/gas_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="10 wei"
+                    android:textColor="@color/black66"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:text="快"
+                    android:textColor="@color/black66"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- 高级布局 ETH -->
+        <LinearLayout
+            android:id="@+id/lly_advance_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/custom_gas_price"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="自定义 gas price"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black33"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="gwei"
+                    android:textColor="@color/black66"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_menu_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/custom_gas_limit"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="自定义Gas"
+                    android:inputType="number"
+                    android:textColor="@color/black33"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="gas"
+                    android:textColor="@color/black66"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_menu_divider_color" />
+
+            <EditText
+                android:id="@+id/et_hex_data"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/etc_transfer_hex_data_et_shape"
+                android:gravity="start"
+                android:hint="十六进制数据"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 高级布局 BTC -->
+        <LinearLayout
+            android:id="@+id/lly_btc_advance_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/custom_btc_gas_price"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="left"
+                    android:hint="自定义gas price"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black33"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="sat/b"
+                    android:textColor="@color/black66"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 高级开关 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp">
+
+            <Switch
+                android:id="@+id/advanced_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textOff="  "
+                android:textOn="  " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toStartOf="@+id/add_switch"
+                android:layout_toLeftOf="@+id/add_switch"
+                android:text="高级选项"
+                android:textColor="@color/black33"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+     <!--  下一步  -->
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/dp_330"
+        android:layout_height="43dp"
+        android:layout_gravity=" bottom |center_horizontal"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/create_wallet_btn_bg_selector"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</FrameLayout>

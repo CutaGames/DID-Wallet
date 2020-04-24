@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_user_info_FFFFFF"
+    tools:context=".activities.bindsevice.ScreenSaverActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_139"
+        android:textSize="@dimen/sp_32"
+        android:textColor="@color/mine_user_info_000000"
+        android:text="@string/unlock_screensaver"/>
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_21"
+        android:textColor="@color/color_BBBBBB"
+        android:text="@string/intput_screensaver_psd"/>
+
+    <com.tancheng.carbonchain.customview.CodeEditText
+        android:id="@+id/etAccount"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword|number"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:strokeBackground="@drawable/base_init_pin_bg"
+        app:strokeHeight="@dimen/dp_50"
+        app:strokeLength="4"
+        app:strokePadding="@dimen/dp_20"
+        app:strokeWidth="@dimen/dp_50"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_27"
+        android:paddingRight="@dimen/dp_79">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvForGetPINCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_606266"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/forget_pin_code"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

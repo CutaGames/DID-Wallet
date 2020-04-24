@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <!-- custom action bar begin -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_action_bar_height"
+        android:background="@drawable/shadow_bg_bottom_line">
+        <!-- back arrow -->
+        <ImageView
+            android:id="@+id/iv_title_left_back"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/action_bar_icon_back"/>
+
+        <!-- title center -->
+        <TextView
+            android:id="@+id/custom_action_bar_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/asset_select_transfer_coin_addr_text"
+            android:textColor="@color/custom_action_bar_title_text_color"
+            android:textSize="@dimen/custom_action_bar_title_text_size"/>
+
+        <!-- add -->
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/custom_action_bar_height"
+            android:layout_height="@dimen/custom_action_bar_height"
+            android:layout_alignParentRight="true"
+            android:padding="11dp"
+            android:src="@mipmap/custom_action_bar_add_icon"/>
+
+    </RelativeLayout>
+    <!-- custom action bar end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/none_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="@dimen/public_big_image_width"
+                android:layout_height="@dimen/public_big_image_height"
+                android:src="@mipmap/asset_digit_soft_address_book_none"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="74dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/asset_digit_soft_address_book_none_text"
+                android:textSize="@dimen/public_text_size_16_sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <!-- container -->
+        <ScrollView
+            android:id="@+id/scrollview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/public_item_margin_left_5_dp"
+                android:layout_marginRight="@dimen/public_item_margin_right_5_dp"
+                android:background="@drawable/shadow_bg_bottom_line"
+                android:visibility="gone">
+
+                <!-- ls view -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/public_item_height_68_dp">
+                    <ImageView
+                        android:id="@+id/left_icon"
+                        android:layout_width="@dimen/public_item_height_44_dp"
+                        android:layout_height="@dimen/public_item_height_44_dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/coin_icon_btc"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/left_icon">
+                        <TextView
+                            android:id="@+id/tv_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Yvan"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/public_text_size_18_sp"/>
+                        <TextView
+                            android:id="@+id/tv_addr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="D_78dhdi_9dudfdsfdoskfodfo_uu977_8uu"
+                            android:textColor="#ff8b8b8d"
+                            android:textSize="@dimen/public_text_size_12_sp"/>
+                        <TextView
+                            android:id="@+id/tv_remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="6dp"
+                            android:text="我是备注"
+                            android:textColor="#ff8b8b8d"
+                            android:textSize="@dimen/public_text_size_12_sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

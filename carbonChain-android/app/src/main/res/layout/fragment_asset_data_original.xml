@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- none layout begin -->
+    <RelativeLayout
+        android:id="@+id/none_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_none_layout_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/asset_data_title_default_text"
+            android:textSize="@dimen/asset_data_title_default_text_size"
+            android:textColor="@color/asset_data_title_default_text_color"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/asset_data_none_title_margin_top"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asset_data_soft_add_wallet_btn_height"
+            android:layout_below="@id/tv_none_layout_remark"
+            android:layout_marginTop="@dimen/asset_data_none_add_margin_top">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/asset_digit_soft_add_wallet_btn_bg">
+                <ImageView
+                    android:id="@+id/asset_data_add_document_btn_icon"
+                    android:layout_width="@dimen/asset_data_add_document_btn_icon_width"
+                    android:layout_height="@dimen/asset_data_add_document_btn_icon_height"
+                    android:src="@mipmap/asset_digit_soft_add_wallet_btn_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/asset_digit_soft_add_wallet_btn_icon_margin_left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/asset_data_add_document_btn_icon"
+                    android:text="@string/asset_data_add_document_btn_text"
+                    android:textColor="@color/asset_data_add_document_btn_text_color"
+                    android:textSize="@dimen/asset_data_add_document_btn_text_size"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/asset_digit_soft_add_wallet_btn_icon_margin_left"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- none layout end -->
+</RelativeLayout>

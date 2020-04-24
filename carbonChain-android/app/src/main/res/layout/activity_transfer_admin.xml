@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15"
+    tools:context=".activities.storage.mine.TransferAdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/activity_title_layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/color_FF5936"
+            android:textSize="@dimen/sp_12"
+            android:text="在解除设备前，请选择一个成员作为该设备的管理员"/>
+
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:numColumns="2"
+            android:horizontalSpacing="@dimen/dp_10"
+            android:verticalSpacing="@dimen/dp_10">
+
+        </GridView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvDeviceUnBind"
+        android:layout_marginTop="@dimen/mine_user_info_dp_130"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_user_info_dp_44"
+        android:layout_marginLeft="@dimen/mine_user_info_dp_20"
+        android:layout_marginRight="@dimen/mine_user_info_dp_20"
+        android:text="移交"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:gravity="center"
+        android:textColor="@color/mine_user_info_FFFFFF"
+        android:textSize="@dimen/mine_user_info_sp_16"
+        android:background="@drawable/base_yuan_d2d5da"/>
+
+</RelativeLayout>
