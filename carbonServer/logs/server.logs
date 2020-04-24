@@ -1,0 +1,155 @@
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myTask' defined in file [D:\code\company\carbonServer\carbonchain-server\target\classes\com\carbonchain\server\service\wallet\MyTask.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'syncTransaction': Invalid fixedDelayString value "60000}" - cannot parse into long
+{dataSource-1} closing ...
+{dataSource-1} closed
+Shutting down ExecutorService 'scheduler'
+Shutting down ExecutorService
+Server failed to start!
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myTask' defined in file [D:\code\company\carbonServer\carbonchain-server\target\classes\com\carbonchain\server\service\wallet\MyTask.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'syncTransaction': Invalid fixedDelayString value "60000}" - cannot parse into long
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at com.carbonchain.server.ServerBootstrap.main(ServerBootstrap.java:49)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'syncTransaction': Invalid fixedDelayString value "60000}" - cannot parse into long
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:496)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:359)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:359)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 9 more
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@5f5effb0{/,null,AVAILABLE}
+Started ServerConnector@47768e74{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+org.web3j.protocol.core.methods.response.Transaction@d8fc4701
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@2f4b98f6{/,null,AVAILABLE}
+Started ServerConnector@124d02b2{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+0x6c87326809f6621cf0e8505150a0423c94721eda   1000000000000000000
+0x6c87326809f6621cf0e8505150a0423c94721eda   1000000000000000000
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@421def93{/,null,AVAILABLE}
+Started ServerConnector@3451f01d{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@58c1da09{/,null,AVAILABLE}
+Started ServerConnector@72503b19{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+frome:0x6c87326809f6621cf0e8505150a0423c94721eda  to:0x81b7e08f65bdf5648606c89998a9cc8164397647 value:1000000000000000000
+input:0x
+begin 34, end 74, length 2
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 1 ms
+Started o.e.j.s.ServletContextHandler@2b2954e1{/,null,AVAILABLE}
+Started ServerConnector@1cfc2538{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...

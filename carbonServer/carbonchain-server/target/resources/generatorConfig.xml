@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- <properties resource="generator.properties" /> -->
+
+	<!-- 指定数据连接驱动jar地址 -->
+	<classPathEntry location="D:/maven-3.6.3/.m2/repository/org/xerial/sqlite-jdbc/3.30.1/sqlite-jdbc-3.30.1.jar" />
+
+	<context id="context1">
+		<property name="mergeable" value="false"></property>
+
+		<plugin type="com.mybatis.ext.generator.OverIsMergeablePlugin"></plugin>
+		<plugin type="com.mybatis.ext.generator.MySQLLimitPlugin"></plugin>
+		<plugin type="com.mybatis.ext.generator.BatchPlugin"></plugin>
+		<!-- <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin> -->
+		<plugin type="org.mybatis.generator.plugins.SelectOneByExamplePlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"></plugin>
+		<!-- <plugin type="org.mybatis.generator.plugins.CachePlugin"></plugin> -->
+
+		<!-- 注释 -->
+		<commentGenerator type="com.mybatis.ext.generator.MyCommentGenerator">
+			<property name="suppressAllComments" value="true" /><!-- 是否取消注释 -->
+			<property name="suppressDate" value="false" /> <!-- 是否生成注释代时间戳 -->
+			<property name="overwrite" value="true"></property>
+		</commentGenerator>
+
+		<!-- jdbc连接 -->
+		<jdbcConnection driverClass="org.sqlite.JDBC"
+			connectionURL="jdbc:sqlite:carbonchain.db" userId="" password="" />
+
+		<!-- 类型转换 -->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="true" />
+		</javaTypeResolver>
+
+		<!-- 生成实体类地址 -->
+		<javaModelGenerator targetPackage="com.carbonchain.server.model"
+			targetProject="D:/git/tancheng-project/carbonchain-server/src/main/java">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+
+		<!-- 生成mapxml文件 -->
+		<sqlMapGenerator targetPackage="com.carbonchain.server.mapperxml"
+			targetProject="D:/git/tancheng-project/carbonchain-server/src/main/java">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<!-- 生成mapxml对应client，也就是接口dao -->
+		<javaClientGenerator targetPackage="com.carbonchain.server.mapper"
+			targetProject="D:/git/tancheng-project/carbonchain-server/src/main/java" type="XMLMAPPER">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		
+		<table schema="" tableName="member_info" domainObjectName="MemberInfo">
+			<columnOverride column="create_time" javaType="java.util.Date"/>
+			<columnOverride column="is_admin" javaType="java.lang.Boolean"/>
+		</table>
+		
+		<!-- <table schema="${jdbc_user}" tableName="account_token" domainObjectName="AccountToken"/> -->
+		<!-- <table schema="${jdbc_user}" tableName="history_price" domainObjectName="HistoryPrice">
+			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table>-->
+		<!-- <table schema="${jdbc_user}" tableName="history_bonded" domainObjectName="HistoryBonded">
+			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table>  -->
+		<!-- <table schema="${jdbc_user}" tableName="history_yield" domainObjectName="HistoryYield">
+			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table> -->
+		<!-- <table schema="${jdbc_user}" tableName="network_node" domainObjectName="NetworkNode"></table> -->
+		
+		<!-- <table schema="${jdbc_user}" tableName="realtime_market" domainObjectName="RealtimeMarket">
+		</table>  -->
+		
+		<!-- <table schema="${jdbc_user}" tableName="exchange" domainObjectName="Exchange">
+			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+		</table>  -->
+		
+		<!-- <table schema="${jdbc_user}" tableName="business_config" domainObjectName="BusinessConfig"></table> -->
+	</context>
+</generatorConfiguration>

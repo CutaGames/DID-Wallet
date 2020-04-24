@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbonchain.server.mapper.WalletTransactionMapper">
+  <resultMap id="BaseResultMap" type="com.carbonchain.server.model.WalletTransaction">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="wallet_type" jdbcType="INTEGER" property="walletType" />
+    <result column="coin_address" jdbcType="VARCHAR" property="coinAddress" />
+    <result column="from_addr" jdbcType="VARCHAR" property="fromAddr" />
+    <result column="to_addr" jdbcType="VARCHAR" property="toAddr" />
+    <result column="value" jdbcType="FLOAT" property="value" />
+    <result column="tx_hash" jdbcType="VARCHAR" property="txHash" />
+    <result column="time_stamp" jdbcType="VARCHAR" property="timeStamp" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="gas" jdbcType="INTEGER" property="gas" />
+    <result column="gas_limit" jdbcType="INTEGER" property="gasLimit" />
+    <result column="block_number" jdbcType="VARCHAR" property="blockNumber" />
+    <result column="error" jdbcType="INTEGER" property="error" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+ 
+</mapper>

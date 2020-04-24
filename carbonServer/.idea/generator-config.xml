@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistentConfig">
+    <option name="historyConfigList">
+      <map>
+        <entry key="carbon_dict">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="CarbonDictMapper" />
+              <option name="daoPackage" value="generator" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="daoTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="CarbonDict" />
+              <option name="modelPackage" value="generator" />
+              <option name="modelTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="name" value="carbon_dict" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="tableName" value="carbon_dict" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+              <option name="xmlTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="wallet_account">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="WalletAccountDao" />
+              <option name="daoPackage" value="generator" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="daoTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="WalletAccount" />
+              <option name="modelPackage" value="generator" />
+              <option name="modelTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="name" value="wallet_account" />
+              <option name="needToStringHashcodeEquals" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="tableName" value="wallet_account" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+              <option name="xmlTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="wallet_coin">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="WalletCoinDao" />
+              <option name="daoPackage" value="generator" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="daoTargetFolder" value="$PROJECT_DIR$" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="WalletCoin" />
+              <option name="modelPackage" value="generator" />
+              <option name="modelTargetFolder" value="$PROJECT_DIR$" />
+              <option name="name" value="wallet_coin" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="wallet_coin" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+              <option name="xmlTargetFolder" value="$PROJECT_DIR$" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="wallet_transaction">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="WalletTransactionDao" />
+              <option name="daoPackage" value="generator" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="daoTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="WalletTransaction" />
+              <option name="modelPackage" value="generator" />
+              <option name="modelTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="name" value="wallet_transaction" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+              <option name="tableName" value="wallet_transaction" />
+              <option name="useExample" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+              <option name="xmlTargetFolder" value="$PROJECT_DIR$/carbonchain-server/src/main/java/com/carbonchain/server/service/wallet" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="users">
+      <map>
+        <entry key="jdbc:sqlite:D:/code/company/carbonServer/carbonchain.db">
+          <value>
+            <User>
+              <option name="username" value="" />
+            </User>
+          </value>
+        </entry>
+        <entry key="jdbc:sqlite:D:\code\company\carbonServer\carbonchain-server\carbonchain.db">
+          <value>
+            <User>
+              <option name="username" value="" />
+            </User>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

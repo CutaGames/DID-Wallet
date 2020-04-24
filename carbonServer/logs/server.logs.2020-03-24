@@ -1,0 +1,92 @@
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@73a0f2b{/,null,AVAILABLE}
+Started ServerConnector@467233e4{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+0xlwe8wlekj0u349skej9sw
+1254222
+666666
+121212121212
+121212121212
+121212121212
+121212121212
+121212121212
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@de7e193{/,null,AVAILABLE}
+Started ServerConnector@5cf8676a{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@13e5d243{/,null,AVAILABLE}
+Started ServerConnector@47f04e4d{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@13e5d243{/,null,AVAILABLE}
+Started ServerConnector@47f04e4d{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@13e5d243{/,null,AVAILABLE}
+Started ServerConnector@47f04e4d{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...
+Initializing ExecutorService
+Bean 'executor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'executor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Initializing ExecutorService 'scheduler'
+Bean 'scheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+removeAbandoned is true, not use in production.
+{dataSource-1} inited
+jetty-9.0.6.v20130930
+Initializing Spring root WebApplicationContext
+Root WebApplicationContext: initialization started
+Root WebApplicationContext initialized in 0 ms
+Started o.e.j.s.ServletContextHandler@13e5d243{/,null,AVAILABLE}
+Started ServerConnector@47f04e4d{HTTP/1.1}{0.0.0.0:81}
+Server startup on 81...

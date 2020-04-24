@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.carbonchain.server.mapper.MemberInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.carbonchain.server.model.MemberInfo" >
+    <id column="member_id" property="memberId" jdbcType="VARCHAR" />
+    <result column="public_key" property="publicKey" jdbcType="VARCHAR" />
+    <result column="nick_name" property="nickName" jdbcType="VARCHAR" />
+    <result column="role" property="role" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="binded_device" property="bindedDevice" jdbcType="VARCHAR" />
+    <result column="auth_puk" property="authPuk" jdbcType="VARCHAR" />
+    <result column="auth_puk_md5" property="authPukMd5" jdbcType="VARCHAR" />
+    <result column="security_questions" property="securityQuestions" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    member_id, public_key, nick_name, role, password, binded_device, auth_puk, auth_puk_md5, 
+    security_questions, state, create_time
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.carbonchain.server.model.MemberInfoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from member_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null" >
+      <if test="offset != null" >
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null" >
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from member_info
+    where member_id = #{memberId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from member_info
+    where member_id = #{memberId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.carbonchain.server.model.MemberInfoExample" >
+    delete from member_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.carbonchain.server.model.MemberInfo" >
+    insert into member_info (member_id, public_key, nick_name, 
+      role, password, binded_device, 
+      auth_puk, auth_puk_md5, security_questions, 
+      state, create_time)
+    values (#{memberId,jdbcType=VARCHAR}, #{publicKey,jdbcType=VARCHAR}, #{nickName,jdbcType=VARCHAR}, 
+      #{role,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{bindedDevice,jdbcType=VARCHAR}, 
+      #{authPuk,jdbcType=VARCHAR}, #{authPukMd5,jdbcType=VARCHAR}, #{securityQuestions,jdbcType=VARCHAR}, 
+      #{state,jdbcType=INTEGER}, #{createTime,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.carbonchain.server.model.MemberInfo" >
+    insert into member_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="memberId != null" >
+        member_id,
+      </if>
+      <if test="publicKey != null" >
+        public_key,
+      </if>
+      <if test="nickName != null" >
+        nick_name,
+      </if>
+      <if test="role != null" >
+        role,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="bindedDevice != null" >
+        binded_device,
+      </if>
+      <if test="authPuk != null" >
+        auth_puk,
+      </if>
+      <if test="authPukMd5 != null" >
+        auth_puk_md5,
+      </if>
+      <if test="securityQuestions != null" >
+        security_questions,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="memberId != null" >
+        #{memberId,jdbcType=VARCHAR},
+      </if>
+      <if test="publicKey != null" >
+        #{publicKey,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null" >
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null" >
+        #{role,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="bindedDevice != null" >
+        #{bindedDevice,jdbcType=VARCHAR},
+      </if>
+      <if test="authPuk != null" >
+        #{authPuk,jdbcType=VARCHAR},
+      </if>
+      <if test="authPukMd5 != null" >
+        #{authPukMd5,jdbcType=VARCHAR},
+      </if>
+      <if test="securityQuestions != null" >
+        #{securityQuestions,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.carbonchain.server.model.MemberInfoExample" resultType="java.lang.Integer" >
+    select count(*) from member_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update member_info
+    <set >
+      <if test="record.memberId != null" >
+        member_id = #{record.memberId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.publicKey != null" >
+        public_key = #{record.publicKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.nickName != null" >
+        nick_name = #{record.nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.role != null" >
+        role = #{record.role,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null" >
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bindedDevice != null" >
+        binded_device = #{record.bindedDevice,jdbcType=VARCHAR},
+      </if>
+      <if test="record.authPuk != null" >
+        auth_puk = #{record.authPuk,jdbcType=VARCHAR},
+      </if>
+      <if test="record.authPukMd5 != null" >
+        auth_puk_md5 = #{record.authPukMd5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.securityQuestions != null" >
+        security_questions = #{record.securityQuestions,jdbcType=VARCHAR},
+      </if>
+      <if test="record.state != null" >
+        state = #{record.state,jdbcType=INTEGER},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update member_info
+    set member_id = #{record.memberId,jdbcType=VARCHAR},
+      public_key = #{record.publicKey,jdbcType=VARCHAR},
+      nick_name = #{record.nickName,jdbcType=VARCHAR},
+      role = #{record.role,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=VARCHAR},
+      binded_device = #{record.bindedDevice,jdbcType=VARCHAR},
+      auth_puk = #{record.authPuk,jdbcType=VARCHAR},
+      auth_puk_md5 = #{record.authPukMd5,jdbcType=VARCHAR},
+      security_questions = #{record.securityQuestions,jdbcType=VARCHAR},
+      state = #{record.state,jdbcType=INTEGER},
+      create_time = #{record.createTime,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.carbonchain.server.model.MemberInfo" >
+    update member_info
+    <set >
+      <if test="publicKey != null" >
+        public_key = #{publicKey,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null" >
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null" >
+        role = #{role,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="bindedDevice != null" >
+        binded_device = #{bindedDevice,jdbcType=VARCHAR},
+      </if>
+      <if test="authPuk != null" >
+        auth_puk = #{authPuk,jdbcType=VARCHAR},
+      </if>
+      <if test="authPukMd5 != null" >
+        auth_puk_md5 = #{authPukMd5,jdbcType=VARCHAR},
+      </if>
+      <if test="securityQuestions != null" >
+        security_questions = #{securityQuestions,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=INTEGER},
+      </if>
+    </set>
+    where member_id = #{memberId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.carbonchain.server.model.MemberInfo" >
+    update member_info
+    set public_key = #{publicKey,jdbcType=VARCHAR},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      role = #{role,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      binded_device = #{bindedDevice,jdbcType=VARCHAR},
+      auth_puk = #{authPuk,jdbcType=VARCHAR},
+      auth_puk_md5 = #{authPukMd5,jdbcType=VARCHAR},
+      security_questions = #{securityQuestions,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=INTEGER}
+    where member_id = #{memberId,jdbcType=VARCHAR}
+  </update>
+  <insert id="insertBatch" parameterType="com.carbonchain.server.model.MemberInfo" >
+    insert into member_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      member_id,public_key,nick_name,role,password,binded_device,auth_puk,auth_puk_md5,security_questions,state,create_time,
+    </trim>
+    values
+    <foreach collection="list" index="index" item="item" separator="," >
+      (
+      <trim suffixOverrides="," >
+        #{item.memberId,jdbcType=VARCHAR},#{item.publicKey,jdbcType=VARCHAR},#{item.nickName,jdbcType=VARCHAR},#{item.role,jdbcType=VARCHAR},#{item.password,jdbcType=VARCHAR},#{item.bindedDevice,jdbcType=VARCHAR},#{item.authPuk,jdbcType=VARCHAR},#{item.authPukMd5,jdbcType=VARCHAR},#{item.securityQuestions,jdbcType=VARCHAR},#{item.state,jdbcType=INTEGER},#{item.createTime,jdbcType=INTEGER},
+      </trim>
+      )
+    </foreach>
+  </insert>
+  <select id="selectOneByExample" resultMap="BaseResultMap" parameterType="com.carbonchain.server.model.MemberInfoExample" >
+    select <include refid="Base_Column_List" /> from member_info <if test="_parameter != null" >  <include refid="Example_Where_Clause" /> </if> <if test="orderByClause != null" >  order by ${orderByClause} </if>  limit 1
+  </select>
+</mapper>

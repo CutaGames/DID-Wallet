@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/carbonchain-server/carbonchain-server.iml" filepath="$PROJECT_DIR$/carbonchain-server/carbonchain-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p/p2p.iml" filepath="$PROJECT_DIR$/p2p/p2p.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tancheng-project.iml" filepath="$PROJECT_DIR$/tancheng-project.iml" />
+    </modules>
+  </component>
+</project>
